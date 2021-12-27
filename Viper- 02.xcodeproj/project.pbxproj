@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8AD737277523D700255501 /* TVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD732277523D700255501 /* TVProtocols.swift */; };
+		0A8AD738277523D700255501 /* TVInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD733277523D700255501 /* TVInteractor.swift */; };
+		0A8AD739277523D700255501 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD734277523D700255501 /* TVViewController.swift */; };
+		0A8AD73A277523D700255501 /* TVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD735277523D700255501 /* TVPresenter.swift */; };
+		0A8AD73B277523D700255501 /* TVRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD736277523D700255501 /* TVRouter.swift */; };
+		0A8AD73D27753A7700255501 /* ModelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD73C27753A7700255501 /* ModelCountry.swift */; };
 		3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A78D276BD89800D147A3 /* AppDelegate.swift */; };
 		3F40A790276BD89800D147A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A78F276BD89800D147A3 /* SceneDelegate.swift */; };
 		3F40A792276BD89800D147A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A791276BD89800D147A3 /* ViewController.swift */; };
 		3F40A795276BD89800D147A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A793276BD89800D147A3 /* Main.storyboard */; };
 		3F40A797276BD89900D147A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A796276BD89900D147A3 /* Assets.xcassets */; };
 		3F40A79A276BD89900D147A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F40A798276BD89900D147A3 /* LaunchScreen.storyboard */; };
+		3F40A7A5276BD8CE00D147A3 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A4276BD8CE00D147A3 /* HomeInteractor.swift */; };
+		3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */; };
+		3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */; };
+		3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */; };
+		3FA63309277A596A002D81FD /* CVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63302277A596A002D81FD /* CVPresenter.swift */; };
+		3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63304277A596A002D81FD /* CVProtocols.swift */; };
+		3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63305277A596A002D81FD /* CVInteractor.swift */; };
+		3FA6330D277A596A002D81FD /* CVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63306277A596A002D81FD /* CVView.swift */; };
+		3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63308277A596A002D81FD /* CVWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A8AD732277523D700255501 /* TVProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProtocols.swift; sourceTree = "<group>"; };
+		0A8AD733277523D700255501 /* TVInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVInteractor.swift; sourceTree = "<group>"; };
+		0A8AD734277523D700255501 /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		0A8AD735277523D700255501 /* TVPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVPresenter.swift; sourceTree = "<group>"; };
+		0A8AD736277523D700255501 /* TVRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVRouter.swift; sourceTree = "<group>"; };
+		0A8AD73C27753A7700255501 /* ModelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCountry.swift; sourceTree = "<group>"; };
 		3F40A78A276BD89800D147A3 /* Viper- 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper- 02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F40A78D276BD89800D147A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F40A78F276BD89800D147A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +45,15 @@
 		3F40A796276BD89900D147A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F40A799276BD89900D147A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F40A79B276BD89900D147A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F40A7A4276BD8CE00D147A3 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		3FA63302277A596A002D81FD /* CVPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPresenter.swift; sourceTree = "<group>"; };
+		3FA63304277A596A002D81FD /* CVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVProtocols.swift; sourceTree = "<group>"; };
+		3FA63305277A596A002D81FD /* CVInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVInteractor.swift; sourceTree = "<group>"; };
+		3FA63306277A596A002D81FD /* CVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVView.swift; sourceTree = "<group>"; };
+		3FA63308277A596A002D81FD /* CVWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A8AD7312775238D00255501 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AD733277523D700255501 /* TVInteractor.swift */,
+				0A8AD735277523D700255501 /* TVPresenter.swift */,
+				0A8AD732277523D700255501 /* TVProtocols.swift */,
+				0A8AD736277523D700255501 /* TVRouter.swift */,
+				0A8AD734277523D700255501 /* TVViewController.swift */,
+				0A8AD73C27753A7700255501 /* ModelCountry.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		3F40A781276BD89800D147A3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +99,41 @@
 		3F40A78C276BD89800D147A3 /* Viper- 02 */ = {
 			isa = PBXGroup;
 			children = (
+				3FA632ED277A56FD002D81FD /* CollectionView */,
+				0A8AD7312775238D00255501 /* TableView */,
+				3F40A7A1276BD8B200D147A3 /* Home */,
 				3F40A78D276BD89800D147A3 /* AppDelegate.swift */,
 				3F40A78F276BD89800D147A3 /* SceneDelegate.swift */,
-				3F40A791276BD89800D147A3 /* ViewController.swift */,
 				3F40A793276BD89800D147A3 /* Main.storyboard */,
 				3F40A796276BD89900D147A3 /* Assets.xcassets */,
 				3F40A798276BD89900D147A3 /* LaunchScreen.storyboard */,
 				3F40A79B276BD89900D147A3 /* Info.plist */,
 			);
 			path = "Viper- 02";
+			sourceTree = "<group>";
+		};
+		3F40A7A1276BD8B200D147A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F40A791276BD89800D147A3 /* ViewController.swift */,
+				3F40A7A4276BD8CE00D147A3 /* HomeInteractor.swift */,
+				3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */,
+				3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */,
+				3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3FA632ED277A56FD002D81FD /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3FA63302277A596A002D81FD /* CVPresenter.swift */,
+				3FA63304277A596A002D81FD /* CVProtocols.swift */,
+				3FA63305277A596A002D81FD /* CVInteractor.swift */,
+				3FA63306277A596A002D81FD /* CVView.swift */,
+				3FA63308277A596A002D81FD /* CVWireFrame.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +207,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8AD73B277523D700255501 /* TVRouter.swift in Sources */,
+				0A8AD73A277523D700255501 /* TVPresenter.swift in Sources */,
 				3F40A792276BD89800D147A3 /* ViewController.swift in Sources */,
+				0A8AD738277523D700255501 /* TVInteractor.swift in Sources */,
+				0A8AD73D27753A7700255501 /* ModelCountry.swift in Sources */,
+				0A8AD739277523D700255501 /* TVViewController.swift in Sources */,
+				3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */,
 				3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */,
+				3FA6330D277A596A002D81FD /* CVView.swift in Sources */,
+				3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */,
+				0A8AD737277523D700255501 /* TVProtocols.swift in Sources */,
+				3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */,
+				3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */,
+				3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */,
+				3F40A7A5276BD8CE00D147A3 /* HomeInteractor.swift in Sources */,
 				3F40A790276BD89800D147A3 /* SceneDelegate.swift in Sources */,
+				3FA63309277A596A002D81FD /* CVPresenter.swift in Sources */,
+				3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

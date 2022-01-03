@@ -24,7 +24,7 @@ class TVInteractor {
     }
     
     func getDatosString() -> String {
-       return "Me llamo Valerie"
+       return "Me llamo Val"
     }
     
     

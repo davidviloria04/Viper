@@ -13,8 +13,6 @@ class Mod1TitleTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var flag: UIImageView!
     
-    let urlString = "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png"
-    
     private var indexPath: IndexPath?
     
     
@@ -24,7 +22,7 @@ class Mod1TitleTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func fetchImage() {
+    func fetchImage(urlString: String) {
         //get data
         
         //convert the data to image
@@ -44,7 +42,6 @@ class Mod1TitleTableViewCell: UITableViewCell {
             }
         }
         getDataTask.resume()
-        
     }
 }
 

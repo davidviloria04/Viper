@@ -11,10 +11,12 @@ public struct Country {
 
     public var name: String
     public var urlImage: String
+    public var type: Int = 0
     
-    init(name: String, urlImage: String){
+    init(name: String, urlImage: String, type: Int){
         self.name = name
         self.urlImage = urlImage
+        self.type = type
         
     }
 }

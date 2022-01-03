@@ -20,29 +20,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="971" height="124"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA REALIZAR ESTA ACCIÓN ES NECESARIO QUE ACTIVES TU CUENTA CLARO PAY" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3x-mz-b53">
-                        <rect key="frame" x="20" y="15" width="607" height="94"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PARA REALIZAR ESTA ACCIÓN ES NECESARIO QUE ACTIVES TU CUENTA CLARO PAY" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3x-mz-b53">
+                        <rect key="frame" x="20" y="17" width="607" height="92"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
                         <color key="textColor" red="0.31372549019607843" green="0.38431372549019605" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="terminal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Em0-ja-8sz">
-                        <rect key="frame" x="680" y="-2" width="240" height="128"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="240" id="B1b-R5-EU6"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terminal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Em0-ja-8sz">
+                        <rect key="frame" x="680" y="-2" width="239" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstItem="Em0-ja-8sz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-55" id="3zY-Oz-vLx"/>
-                    <constraint firstItem="Em0-ja-8sz" firstAttribute="centerY" secondItem="m3x-mz-b53" secondAttribute="centerY" id="GGD-v6-rtj"/>
-                    <constraint firstItem="m3x-mz-b53" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="MIq-Aa-fZR"/>
-                    <constraint firstAttribute="bottom" secondItem="m3x-mz-b53" secondAttribute="bottom" constant="15" id="Zg0-ry-wDr"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Em0-ja-8sz" secondAttribute="trailing" constant="31" id="dmj-Rc-RIc"/>
-                    <constraint firstItem="m3x-mz-b53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oic-oY-1Ln"/>
-                    <constraint firstItem="Em0-ja-8sz" firstAttribute="leading" secondItem="m3x-mz-b53" secondAttribute="trailing" constant="53" id="roj-HY-pBN"/>
-                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>

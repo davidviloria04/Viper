@@ -23,13 +23,14 @@ class TVViewController: UIViewController {
         tableView.dataSource = self
         
         register(classType: Mod1TitleTableViewCell.self)
+        register(classType: MyCollectionViewCell.self)
         tableView.reloadData()    }
     
     
     private func register(classType: AnyClass) {
-           let id = String(describing: classType.self)
-           tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
-       }
+        let id = String(describing: classType.self)
+        tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
+    }
     
 }
 
@@ -55,10 +56,18 @@ extension TVViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
-        cell.titleLabel.text = listCountry[indexPath.row].name
-        cell.fetchImage()
-               return cell
+        if (listCountry[indexPath.row].type == 1) {
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
+            cell.titleLabel.text = listCountry[indexPath.row].name
+            cell.fetchImage(urlString: listCountry[indexPath.row].urlImage)
+            return cell
+            
+        } else{
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell() }
+            
+            return cell
+        }
+        
     }
     
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyCollectionViewCell: UICollectionViewCell {
+class MyCollectionViewCell: UITableViewCell {
 
     @IBOutlet weak var imgAvatar: UIImageView!
     

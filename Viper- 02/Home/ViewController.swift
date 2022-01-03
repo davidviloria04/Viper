@@ -11,11 +11,15 @@ class ViewController: UIViewController {
     
     var presenter: HomePresenterProtocol?
 
+    @IBOutlet weak var vistaBanner: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //Comunico a mi vista con el presenter
         presenter?.viewDidLoad()
+        
+        let banner = Banner()
+        vistaBanner.addSubview(banner)
     }
 
     @IBAction func CallViper(_ sender: Any) {

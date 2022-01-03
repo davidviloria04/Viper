@@ -12,11 +12,9 @@ class CVInteractor: CVInteractorInputProtocol {
 
     // MARK: Properties
     weak var presenter: CVInteractorOutputProtocol?
-    var localDatamanager: CVLocalDataManagerInputProtocol?
-    var remoteDatamanager: CVRemoteDataManagerInputProtocol?
 
 }
 
-extension CVInteractor: CVRemoteDataManagerOutputProtocol {
+extension CVInteractor {
     // TODO: Implement use case methods
 }

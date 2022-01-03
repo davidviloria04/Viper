@@ -15,9 +15,7 @@ class CVWireFrame: CVWireFrameProtocol {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "CVView")
         if let view = navController.children.first as? CVView {
             let presenter: CVPresenterProtocol & CVInteractorOutputProtocol = CVPresenter()
-            let interactor: CVInteractorInputProtocol & CVRemoteDataManagerOutputProtocol = CVInteractor()
-            let localDataManager: CVLocalDataManagerInputProtocol = CVLocalDataManager()
-            let remoteDataManager: CVRemoteDataManagerInputProtocol = CVRemoteDataManager()
+            let interactor: CVInteractorInputProtocol = CVInteractor()
             let wireFrame: CVWireFrameProtocol = CVWireFrame()
             
             view.presenter = presenter
@@ -25,9 +23,6 @@ class CVWireFrame: CVWireFrameProtocol {
             presenter.wireFrame = wireFrame
             presenter.interactor = interactor
             interactor.presenter = presenter
-            interactor.localDatamanager = localDataManager
-            interactor.remoteDatamanager = remoteDataManager
-            remoteDataManager.remoteRequestHandler = interactor
             
             return navController
         }

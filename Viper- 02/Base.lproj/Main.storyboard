@@ -31,6 +31,11 @@
                                     <action selector="CallViper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZb-lv-dP2"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szf-bd-EHa">
+                                <rect key="frame" x="87" y="617" width="244" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,10 +45,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vd9-S8-MZg"/>
+                    <connections>
+                        <outlet property="vistaBanner" destination="Szf-bd-EHa" id="JnN-PJ-PoC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="211"/>
+            <point key="canvasLocation" x="928.98550724637687" y="210.9375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gsk-MQ-xY7">
@@ -52,13 +60,23 @@
                     <view key="view" contentMode="scaleToFill" id="Mva-Y5-EfR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voY-Hd-rf8">
+                                <rect key="frame" x="87" y="169" width="240" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="U9I-Xh-wXi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="voY-Hd-rf8" id="RPb-53-Icv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvD-cN-PyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="211"/>
+            <point key="canvasLocation" x="1789.8550724637682" y="210.9375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zy5-Ks-vey">

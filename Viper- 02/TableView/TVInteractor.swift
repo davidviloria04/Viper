@@ -38,11 +38,11 @@ class TVInteractor {
     
     func getDatosCountry() -> [Country] {
         var listCountry = [Country]()
-        listCountry.append(Country(name:"España" ))
-        listCountry.append(Country(name:"Mexico" ))
-        listCountry.append(Country(name:"Perú" ))
-        listCountry.append(Country(name:"Colombia" ))
-        listCountry.append(Country(name:"Argentina" ))
+        listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png"))
+        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" ))
+        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" ))
+        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" ))
+        listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" ))
         
        return listCountry
     }

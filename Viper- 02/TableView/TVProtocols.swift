@@ -13,7 +13,9 @@ protocol TVViewProtocol: AnyObject {
     // Presenter -> View
     var presenter: TVPresenterProtocol? { get set }
     func ViewCountry(countries :[Country])
+    
     func NumCountry(numCountry :Int)
+    
 }
 
 
@@ -34,5 +36,5 @@ protocol TVPresenterProtocol: AnyObject{
 
 protocol TVInteractorProtocol: AnyObject {
     func getDatos() ->[String]
-    func getCoutries() ->[Country]
+    func getCountries() ->[Country]
 }

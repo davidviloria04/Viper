@@ -15,9 +15,6 @@ class Mod1TitleTableViewCell: UITableViewCell {
     
     private var indexPath: IndexPath?
     
-    
-    //    var entityFirebase: NewOnbordingAnalitics?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

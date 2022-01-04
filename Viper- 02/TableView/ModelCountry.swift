@@ -20,3 +20,13 @@ public struct Country {
         
     }
 }
+
+public struct Cities{
+    public var name: String
+    public var urlImage: String
+    
+    init(name: String, urlImage: String) {
+        self.name  = name
+        self.urlImage = urlImage
+    }
+}

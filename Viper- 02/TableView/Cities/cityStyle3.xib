@@ -8,14 +8,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="JQT-9J-fUO">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="162" id="JQT-9J-fUO" customClass="cityStyle3" customModule="Viper__02" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JQT-9J-fUO" id="Y0V-WI-8l2" customClass="cityStyle3" customModule="Viper__02" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-lL-BZu">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIW-ap-GCC" userLabel="flag">
+                        <rect key="frame" x="51" y="14" width="126" height="66"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="s3F-lL-BZu">
                         <rect key="frame" x="262" y="27" width="81" height="41"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-Tu-wV5" userLabel="cityLabel">
@@ -32,26 +36,13 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EIW-ap-GCC" userLabel="flag">
-                        <rect key="frame" x="51" y="14" width="126" height="66"/>
-                    </imageView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="s3F-lL-BZu" firstAttribute="leading" secondItem="EIW-ap-GCC" secondAttribute="trailing" constant="85" id="0TE-Qd-OJx"/>
-                    <constraint firstAttribute="bottom" secondItem="EIW-ap-GCC" secondAttribute="bottom" constant="15" id="Enm-tT-nYK"/>
-                    <constraint firstItem="s3F-lL-BZu" firstAttribute="top" secondItem="Y0V-WI-8l2" secondAttribute="top" constant="27" id="Kt6-qV-n4M"/>
-                    <constraint firstItem="s3F-lL-BZu" firstAttribute="leading" secondItem="EIW-ap-GCC" secondAttribute="trailing" constant="85" id="R6N-CT-vXG"/>
-                    <constraint firstAttribute="bottom" secondItem="s3F-lL-BZu" secondAttribute="bottom" constant="27" id="bc9-S2-gXF"/>
-                    <constraint firstAttribute="trailing" secondItem="s3F-lL-BZu" secondAttribute="trailing" constant="71" id="h4g-vJ-fgJ"/>
-                    <constraint firstItem="EIW-ap-GCC" firstAttribute="top" secondItem="Y0V-WI-8l2" secondAttribute="top" constant="14" id="nHv-Oj-mz3"/>
-                    <constraint firstItem="EIW-ap-GCC" firstAttribute="leading" secondItem="Y0V-WI-8l2" secondAttribute="leading" constant="51" id="u7f-Vs-hFD"/>
-                </constraints>
-                <connections>
-                    <outlet property="cityLabel" destination="EOp-Tu-wV5" id="1n9-Cm-yFV"/>
-                    <outlet property="flag" destination="EIW-ap-GCC" id="CAE-ZD-cGG"/>
-                </connections>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-286.95652173913044" y="38.504464285714285"/>
+            <connections>
+                <outlet property="cityLabel" destination="EOp-Tu-wV5" id="ybN-1m-bRZ"/>
+                <outlet property="flag" destination="EIW-ap-GCC" id="6dD-ud-xeY"/>
+            </connections>
+            <point key="canvasLocation" x="-286.95652173913044" y="16.071428571428569"/>
         </tableViewCell>
     </objects>
 </document>

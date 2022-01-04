@@ -8,8 +8,10 @@
 import UIKit
 
 class cityStyle3 : UITableViewCell {
-    @IBOutlet weak var cityLabel: UILabel!
+    
     @IBOutlet weak var flag: UIImageView!
+    @IBOutlet weak var cityLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

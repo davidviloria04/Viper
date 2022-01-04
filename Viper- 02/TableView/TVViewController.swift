@@ -24,6 +24,7 @@ class TVViewController: UIViewController {
         
         register(classType: Mod1TitleTableViewCell.self)
         register(classType: MyCollectionViewCell.self)
+        register(classType: cityStyle3.self)
         tableView.reloadData()    }
     
     
@@ -75,6 +76,11 @@ extension TVViewController: UITableViewDataSource{
         }
         
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           
+           return UITableView.automaticDimension
+       }
     
     
 }

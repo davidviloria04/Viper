@@ -35,12 +35,12 @@ class TVInteractor {
     
     func getDatosCountry() -> [Country] {
         var listCountry = [Country]()
-        listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1))
-        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 3 ))
-        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 3))
-        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1 ))
-        listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1 ))
-        listCountry.append(Country(name:"Lima", urlImage: "https://st2.depositphotos.com/1482106/12306/i/950/depositphotos_123064476-stock-photo-waving-flag-of-lima-peru.jpg?forcejpeg=true", type: 2 ))
+        listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
+        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 3, cities: getDatosCities()))
+        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 3, cities: getDatosCities()))
+        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
+        listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
+        listCountry.append(Country(name:"Lima", urlImage: "https://st2.depositphotos.com/1482106/12306/i/950/depositphotos_123064476-stock-photo-waving-flag-of-lima-peru.jpg?forcejpeg=true", type: 2, cities: getDatosCities()))
         
        return listCountry
     }

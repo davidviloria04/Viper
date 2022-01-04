@@ -28,7 +28,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terminal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Em0-ja-8sz">
-                        <rect key="frame" x="680" y="-2" width="238" height="128"/>
+                        <rect key="frame" x="680" y="-2" width="237" height="128"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
                 </subviews>

@@ -62,7 +62,13 @@ extension TVViewController: UITableViewDataSource{
             cell.fetchImage(urlString: listCountry[indexPath.row].urlImage)
             return cell
             
-        } else{
+        } else if (listCountry[indexPath.row].type == 2) {
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "cityStyle3") as? cityStyle3 else { return UITableViewCell() }
+            cell.cityLabel.text = listCountry[indexPath.row].name
+            cell.fetchImage(urlString: listCountry[indexPath.row].urlImage)
+            return cell
+            
+        }else{
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell() }
             
             return cell

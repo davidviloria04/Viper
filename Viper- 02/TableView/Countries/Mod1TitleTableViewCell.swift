@@ -10,35 +10,40 @@ import UIKit
 
 class Mod1TitleTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var flag: UIImageView!
+    
+    @IBOutlet weak var citiesCV: UICollectionView!
     
     private var indexPath: IndexPath?
     
+    var delegate : TVViewController?
+    
+    var listCities = [Cities]()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        citiesCV.dataSource = self
+        register(classType: CollectionViewCell.self)
+        citiesCV.reloadData()
         // Initialization code
     }
-    func fetchImage(urlString: String) {
-        //get data
-        
-        //convert the data to image
-        //set image to imageView
-        guard let url = URL(string: urlString) else {
-            return
+    
+    private func register(classType: AnyClass) {
+            let id = String(describing: classType.self)
+        citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
-        
-        let getDataTask = URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data, error == nil else{
-                return
-            }
-            
-            DispatchQueue.main.async {
-                let image = UIImage(data: data)
-                self.flag.image = image
-            }
-        }
-        getDataTask.resume()
-    }
+    
 }
 
+extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.listCities.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        cell.cityname.text = listCities[indexPath.row].name
+        return cell
+    }
+    
+    
+}

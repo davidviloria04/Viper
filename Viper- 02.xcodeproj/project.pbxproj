@@ -47,6 +47,8 @@
 		FB87D7F82784E9CC006056BE /* cityStyle3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87D7F72784E9CC006056BE /* cityStyle3.swift */; };
 		FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB87D7F92784EDD2006056BE /* cityStyle2.xib */; };
 		FB87D7FC2784EE78006056BE /* cityStyle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87D7FB2784EE78006056BE /* cityStyle2.swift */; };
+		FB87D7FF278640BD006056BE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87D7FD278640BC006056BE /* CollectionViewCell.swift */; };
+		FB87D800278640BD006056BE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB87D7FE278640BC006056BE /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		FB87D7F72784E9CC006056BE /* cityStyle3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityStyle3.swift; sourceTree = "<group>"; };
 		FB87D7F92784EDD2006056BE /* cityStyle2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cityStyle2.xib; sourceTree = "<group>"; };
 		FB87D7FB2784EE78006056BE /* cityStyle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityStyle2.swift; sourceTree = "<group>"; };
+		FB87D7FD278640BC006056BE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FB87D7FE278640BC006056BE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				0A8AD73C27753A7700255501 /* ModelCountry.swift */,
 				3FCA9D792784C6F80071C787 /* Cities */,
 				3FCA9D7A2784C7220071C787 /* Countries */,
+				FB87D7FD278640BC006056BE /* CollectionViewCell.swift */,
+				FB87D7FE278640BC006056BE /* CollectionViewCell.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				3F88592F277CEAD70015C98F /* Mod2TitleTableViewCell.xib in Resources */,
 				3F80F074277BCADC00C8C787 /* Mod1TitleTableViewCell.xib in Resources */,
 				3F40A795276BD89800D147A3 /* Main.storyboard in Resources */,
+				FB87D800278640BD006056BE /* CollectionViewCell.xib in Resources */,
 				3FCA9D762784C4F00071C787 /* MyCities1.xib in Resources */,
 				FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */,
 				FB87D7F42784E764006056BE /* cityStyle3.xib in Resources */,
@@ -302,6 +309,7 @@
 				3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */,
 				3FA6330D277A596A002D81FD /* CVView.swift in Sources */,
 				3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */,
+				FB87D7FF278640BD006056BE /* CollectionViewCell.swift in Sources */,
 				3F80F06E277BC24600C8C787 /* Banner.swift in Sources */,
 				0A8AD737277523D700255501 /* TVProtocols.swift in Sources */,
 				3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */,

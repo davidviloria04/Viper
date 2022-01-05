@@ -21,6 +21,7 @@ class TVViewController: UIViewController {
         presenter?.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
         
         register(classType: Mod1TitleTableViewCell.self)
         register(classType: MyCollectionViewCell.self)
@@ -51,7 +52,7 @@ extension TVViewController: TVViewProtocol{
     
 }
 
-extension TVViewController: UITableViewDataSource{
+extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.listCountry.count
     }
@@ -59,8 +60,8 @@ extension TVViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCountry[indexPath.row].type == 1) {
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
-            cell.titleLabel.text = listCountry[indexPath.row].name
-            cell.fetchImage(urlString: listCountry[indexPath.row].urlImage)
+            cell.listCities = listCountry[indexPath.row].cities
+            cell.delegate = self
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
@@ -76,11 +77,11 @@ extension TVViewController: UITableViewDataSource{
         }
         
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           
-           return UITableView.automaticDimension
-       }
+        return UITableView.automaticDimension
+    }
+    
+    
     
     
 }

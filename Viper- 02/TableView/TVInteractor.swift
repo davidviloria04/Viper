@@ -51,7 +51,7 @@ class TVInteractor {
         listCity.append(Cities(name: "Ciudad de mexico", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Lima", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Bogotá", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Buenos aires", urlImage: "avatar1", type: 1))
+        //listCity.append(Cities(name: "Buenos aires", urlImage: "avatar1", type: 1))
         
         return listCity
     }

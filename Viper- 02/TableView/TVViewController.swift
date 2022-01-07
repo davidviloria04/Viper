@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class TVViewController: UIViewController {
     
@@ -26,7 +27,12 @@ class TVViewController: UIViewController {
         register(classType: Mod1TitleTableViewCell.self)
         register(classType: MyCollectionViewCell.self)
         register(classType: cityStyle3.self)
-        tableView.reloadData()    }
+        tableView.reloadData()
+        
+        //Skeleton
+        setupSkeleton()
+        
+    }
     
     
     private func register(classType: AnyClass) {
@@ -34,6 +40,9 @@ class TVViewController: UIViewController {
         tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
     }
     
+    private func setupSkeleton(){
+        tableView.isSkeletonable = true
+    }
 }
 
 extension TVViewController: TVViewProtocol{

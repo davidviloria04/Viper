@@ -25,8 +25,11 @@
 		3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */; };
 		3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */; };
 		3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */; };
+		3F43EB0B2787F2AE00C44D02 /* FinalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43EB092787F2AE00C44D02 /* FinalCollectionViewCell.swift */; };
+		3F43EB0C2787F2AE00C44D02 /* FinalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F43EB0A2787F2AE00C44D02 /* FinalCollectionViewCell.xib */; };
 		3F6CC65E2784A8D9002DED98 /* cityStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6CC65C2784A8D9002DED98 /* cityStyle.swift */; };
 		3F6CC65F2784A8D9002DED98 /* cityStyle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6CC65D2784A8D9002DED98 /* cityStyle.xib */; };
+		3F731160278785C600E07EDC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 3F73115F278785C600E07EDC /* SkeletonView */; };
 		3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F067277BBE6E00C8C787 /* XIBViewController.swift */; };
 		3F80F06A277BBE6E00C8C787 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F80F068277BBE6E00C8C787 /* XIBViewController.xib */; };
 		3F80F06C277BBEC000C8C787 /* XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F06B277BBEC000C8C787 /* XIB.swift */; };
@@ -72,6 +75,8 @@
 		3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		3F43EB092787F2AE00C44D02 /* FinalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F43EB0A2787F2AE00C44D02 /* FinalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinalCollectionViewCell.xib; sourceTree = "<group>"; };
 		3F6CC65C2784A8D9002DED98 /* cityStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityStyle.swift; sourceTree = "<group>"; };
 		3F6CC65D2784A8D9002DED98 /* cityStyle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cityStyle.xib; sourceTree = "<group>"; };
 		3F80F067277BBE6E00C8C787 /* XIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F731160278785C600E07EDC /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +217,8 @@
 				3F88592E277CEAD70015C98F /* Mod2TitleTableViewCell.xib */,
 				3F1BA826278378AB00171E6C /* MyCollectionViewCell.swift */,
 				3F1BA8242783785600171E6C /* MyCollectionViewCell.xib */,
+				3F43EB092787F2AE00C44D02 /* FinalCollectionViewCell.swift */,
+				3F43EB0A2787F2AE00C44D02 /* FinalCollectionViewCell.xib */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -231,6 +239,9 @@
 			dependencies = (
 			);
 			name = "Viper- 02";
+			packageProductDependencies = (
+				3F73115F278785C600E07EDC /* SkeletonView */,
+			);
 			productName = "Viper- 02";
 			productReference = 3F40A78A276BD89800D147A3 /* Viper- 02.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 3F40A781276BD89800D147A3;
+			packageReferences = (
+				3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = 3F40A78B276BD89800D147A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +300,7 @@
 				3F1BA8252783785600171E6C /* MyCollectionViewCell.xib in Resources */,
 				3F80F070277BC24D00C8C787 /* banner.xib in Resources */,
 				3F6CC65F2784A8D9002DED98 /* cityStyle.xib in Resources */,
+				3F43EB0C2787F2AE00C44D02 /* FinalCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +326,7 @@
 				3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */,
 				FB87D7FF278640BD006056BE /* CollectionViewCell.swift in Sources */,
 				3F80F06E277BC24600C8C787 /* Banner.swift in Sources */,
+				3F43EB0B2787F2AE00C44D02 /* FinalCollectionViewCell.swift in Sources */,
 				0A8AD737277523D700255501 /* TVProtocols.swift in Sources */,
 				3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */,
 				3FCA9D782784C6E60071C787 /* MyCities1.swift in Sources */,
@@ -544,6 +560,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F73115F278785C600E07EDC /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F40A782276BD89800D147A3 /* Project object */;
 }

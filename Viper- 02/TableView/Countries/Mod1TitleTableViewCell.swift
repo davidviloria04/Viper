@@ -13,17 +13,27 @@ class Mod1TitleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var citiesCV: UICollectionView!
     
+    //citiesCV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+    
     private var indexPath: IndexPath?
+    
+    private let itemsPerRow: CGFloat = 2
     
     var delegate : TVViewController?
     
     var listCities = [Cities]()
     
+    
+    
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         citiesCV.dataSource = self
         register(classType: CollectionViewCell.self)
+        self.citiesCV.collectionViewLayout = flowLayout
         citiesCV.reloadData()
+
         // Initialization code
     }
     
@@ -47,3 +57,16 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     
     
 }
+var flowLayout: UICollectionViewFlowLayout {
+    let _flowLayout = UICollectionViewFlowLayout()
+
+    // edit properties here
+    _flowLayout.itemSize = CGSize(width: 100, height: 100)
+    _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+    _flowLayout.minimumInteritemSpacing = 0.0
+    // edit properties here
+
+    return _flowLayout
+}
+
+

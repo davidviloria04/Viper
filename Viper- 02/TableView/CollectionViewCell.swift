@@ -19,7 +19,7 @@ class CollectionViewCell: UICollectionViewCell {
         setupSkeleton()
         loadData()
     }
-    //Skeleton
+    
     private func setupSkeleton(){
         cityname.isSkeletonable = true
         icon.isSkeletonable = true

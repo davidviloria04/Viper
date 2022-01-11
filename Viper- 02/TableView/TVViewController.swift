@@ -68,7 +68,8 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCountry[indexPath.row].type == 1) {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell()
+            }
             cell.listCities = listCountry[indexPath.row].cities
             cell.delegate = self
             return cell
@@ -80,7 +81,8 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
             
         }else{
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell() }
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
+            }
             
             return cell
         }

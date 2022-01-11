@@ -12,10 +12,11 @@ class Mod1TitleTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var citiesCV: UICollectionView!
-    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapDetected))
     
     private var indexPath: IndexPath?
+    
     var delegate : TVViewController?
+    
     var listCities = [Cities]()
     
     override func awakeFromNib() {
@@ -31,10 +32,6 @@ class Mod1TitleTableViewCell: UITableViewCell {
         citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
     
-    @objc func tapDetected(){
-        print("Pulsado")
-    }
-    
 }
 
 extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
@@ -45,9 +42,6 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.cityname.text = listCities[indexPath.row].name
-        cell.icon.isUserInteractionEnabled = true
-        cell.icon.addGestureRecognizer(tapGesture)
-        
         return cell
     }
     

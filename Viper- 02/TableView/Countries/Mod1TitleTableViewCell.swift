@@ -30,6 +30,7 @@ class Mod1TitleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         citiesCV.dataSource = self
+        citiesCV.delegate = self
         register(classType: CollectionViewCell.self)
         self.citiesCV.collectionViewLayout = flowLayout
         citiesCV.reloadData()
@@ -54,6 +55,9 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
         cell.cityname.text = listCities[indexPath.row].name
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
+        debugPrint("this works")
+    }
     
     
 }
@@ -61,9 +65,9 @@ var flowLayout: UICollectionViewFlowLayout {
     let _flowLayout = UICollectionViewFlowLayout()
 
     // edit properties here
-    _flowLayout.itemSize = CGSize(width: 100, height: 100)
+    _flowLayout.itemSize = CGSize(width: 80, height: 80)
     _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    _flowLayout.minimumInteritemSpacing = 0.0
+    _flowLayout.minimumInteritemSpacing = 5
     // edit properties here
 
     return _flowLayout

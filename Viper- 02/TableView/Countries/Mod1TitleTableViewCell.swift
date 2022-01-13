@@ -63,9 +63,9 @@ var flowLayout: UICollectionViewFlowLayout {
     let _flowLayout = UICollectionViewFlowLayout()
 
     // edit properties here
-    _flowLayout.itemSize = CGSize(width: 80, height: 80)
+    _flowLayout.itemSize = CGSize(width: 80, height: 100)
     _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    _flowLayout.minimumInteritemSpacing = 5
+    _flowLayout.minimumInteritemSpacing = 4
     // edit properties here
 
     return _flowLayout

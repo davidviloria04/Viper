@@ -43,6 +43,12 @@ class TVViewController: UIViewController {
     private func setupSkeleton(){
         tableView.isSkeletonable = true
     }
+    
+    func alert(){
+        let alert = UIAlertController(title: "Pulsado", message: "Haz pulsado", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true)
+    }
 }
 
 extension TVViewController: TVViewProtocol{
@@ -54,7 +60,6 @@ extension TVViewController: TVViewProtocol{
     func ViewCountry(countries: [Country]) {
         print(countries)
         self.listCountry = countries
-        
     }
     
     // TODO: implement view output methods
@@ -80,14 +85,18 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
             
         }else{
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell() }
-            
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
+            }
             return cell
         }
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 400
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        alert()
     }
     
     

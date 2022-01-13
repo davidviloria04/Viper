@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Mod1TitleTableViewCell: UITableViewCell {
+class Mod1TitleTableViewCell: UITableViewCell{
     
     
     @IBOutlet weak var citiesCV: UICollectionView!
@@ -16,11 +16,8 @@ class Mod1TitleTableViewCell: UITableViewCell {
     //citiesCV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     
     private var indexPath: IndexPath?
-    
     private let itemsPerRow: CGFloat = 2
-    
     var delegate : TVViewController?
-    
     var listCities = [Cities]()
     
     
@@ -56,7 +53,8 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
-        debugPrint("this works")
+        delegate?.alert()
+        print("Hello")
     }
     
     

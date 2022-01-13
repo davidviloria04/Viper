@@ -11,9 +11,7 @@ import UIKit
 class MyCollectionViewCell: UITableViewCell {
 
     @IBOutlet weak var imgAvatar: UIImageView!
-    
     @IBOutlet weak var lbName: UILabel!
-    
     @IBOutlet weak var lbComment: UILabel!
     
     override func awakeFromNib() {

@@ -11,9 +11,7 @@ import UIKit
 class Mod2TitleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var icon: UIImageView!
-    
     private var indexPath: IndexPath?
-    
     let urlString = "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png"
     
     

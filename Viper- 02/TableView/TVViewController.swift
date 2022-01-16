@@ -92,7 +92,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 80))
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

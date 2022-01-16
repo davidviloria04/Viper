@@ -19,14 +19,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="328" height="76"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-EZ-NLZ">
-                                <rect key="frame" x="8" y="6" width="64" height="64"/>
+                                <rect key="frame" x="8" y="10" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="698-K0-lVF"/>
                                     <constraint firstAttribute="width" constant="64" id="BwI-Xc-qyu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC0-2f-g3J">
-                                <rect key="frame" x="80" y="16" width="240" height="21"/>
+                                <rect key="frame" x="80" y="15" width="240" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="xTn-fR-kBb"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZj-Dv-KLI">
-                                <rect key="frame" x="80" y="45" width="240" height="21"/>
+                                <rect key="frame" x="80" y="44" width="240" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="rlg-Rk-172"/>
                                 </constraints>
@@ -46,10 +46,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LAc-EZ-NLZ" firstAttribute="centerY" secondItem="WgZ-G3-QRh" secondAttribute="centerY" id="2ol-Ys-cw3"/>
                             <constraint firstItem="dZj-Dv-KLI" firstAttribute="leading" secondItem="LAc-EZ-NLZ" secondAttribute="trailing" constant="8" id="4p9-XD-VeT"/>
                             <constraint firstItem="LAc-EZ-NLZ" firstAttribute="leading" secondItem="WgZ-G3-QRh" secondAttribute="leading" constant="8" id="93B-DT-wiJ"/>
-                            <constraint firstItem="CC0-2f-g3J" firstAttribute="top" secondItem="WgZ-G3-QRh" secondAttribute="top" constant="16" id="anw-jw-Zpu"/>
+                            <constraint firstItem="LAc-EZ-NLZ" firstAttribute="top" secondItem="WgZ-G3-QRh" secondAttribute="top" constant="10" id="GUK-D2-0lw"/>
+                            <constraint firstItem="CC0-2f-g3J" firstAttribute="top" secondItem="WgZ-G3-QRh" secondAttribute="top" constant="15" id="anw-jw-Zpu"/>
                             <constraint firstAttribute="trailing" secondItem="dZj-Dv-KLI" secondAttribute="trailing" constant="8" id="hWe-88-OYL"/>
                             <constraint firstItem="dZj-Dv-KLI" firstAttribute="top" secondItem="CC0-2f-g3J" secondAttribute="bottom" constant="8" id="pLw-GA-FgT"/>
                             <constraint firstItem="CC0-2f-g3J" firstAttribute="leading" secondItem="LAc-EZ-NLZ" secondAttribute="trailing" constant="8" id="t8u-aA-GBj"/>

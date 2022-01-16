@@ -54,16 +54,13 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
         delegate?.alert()
-        print("Hello")
     }
-    
     
 }
 var flowLayout: UICollectionViewFlowLayout {
     let _flowLayout = UICollectionViewFlowLayout()
-
     // edit properties here
-    _flowLayout.itemSize = CGSize(width: 80, height: 100)
+    _flowLayout.itemSize = CGSize(width: 80, height: 80)
     _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     _flowLayout.minimumInteritemSpacing = 4
     // edit properties here

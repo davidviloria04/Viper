@@ -20,6 +20,8 @@ class CollectionViewCell: UICollectionViewCell {
         // Initialization code
         setupSkeleton()
         loadData()
+        view.layer.cornerRadius = 10.0;
+        view.clipsToBounds = true
     }
     
     

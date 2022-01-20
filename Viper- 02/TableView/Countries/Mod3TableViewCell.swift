@@ -1,14 +1,13 @@
 //
-//  TitleTableViewCell.swift
-//  SDKTransfer
+//  Mod3TableViewCell.swift
+//  Viper- 02
 //
-//  Created by Juan Carlos Balderas Saldaña on 30/04/21.
-//  Copyright © 2021 Diego Palomares Castro. All rights reserved.
+//  Created by David Viloria Ortega on 20/01/22.
 //
 
 import UIKit
 
-class Mod1TitleTableViewCell: UITableViewCell{
+class Mod3TableViewCell: UITableViewCell{
     
     
     @IBOutlet weak var citiesCV: UICollectionView!
@@ -23,8 +22,8 @@ class Mod1TitleTableViewCell: UITableViewCell{
         super.awakeFromNib()
         citiesCV.dataSource = self
         citiesCV.delegate = self
-        register(classType: CollectionViewCell.self)
-        self.citiesCV.collectionViewLayout = flowLayout
+        register(classType: AccesosRapidos.self)
+        self.citiesCV.collectionViewLayout = flowLayout2
         citiesCV.reloadData()
 
         // Initialization code
@@ -37,14 +36,14 @@ class Mod1TitleTableViewCell: UITableViewCell{
     
 }
 
-extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
+extension Mod3TableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.listCities.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
-            cell.cityname.text = listCities[indexPath.row].name
+            guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
+            cell.labelAR.text = listCities[indexPath.row].name
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
@@ -52,7 +51,7 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     }
     
 }
-var flowLayout: UICollectionViewFlowLayout {
+var flowLayout2: UICollectionViewFlowLayout {
     let flowLayout = UICollectionViewFlowLayout()
     // edit properties here
     flowLayout.itemSize = CGSize(width: 80, height: 80)
@@ -62,5 +61,3 @@ var flowLayout: UICollectionViewFlowLayout {
 
     return flowLayout
 }
-
-

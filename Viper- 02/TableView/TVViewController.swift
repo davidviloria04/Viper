@@ -27,6 +27,8 @@ class TVViewController: UIViewController {
         register(classType: Mod1TitleTableViewCell.self)
         register(classType: MyCollectionViewCell.self)
         register(classType: cityStyle3.self)
+        register(classType: Mod2TitleTableViewCell.self)
+        register(classType: Mod3TableViewCell.self)
         tableView.reloadData()
         
         //Skeleton
@@ -79,15 +81,20 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "PageControl") as? PageControl else { return UITableViewCell() }
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? Mod3TableViewCell else { return UITableViewCell() }
+            cell.listCities = listCountry[indexPath.row].cities
+            cell.delegate = self
             return cell
             
-        }else{
+        }else if (listCountry[indexPath.row].type == 3){
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
             }
             return cell
+        } else{
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()
+            }
+            return cell
         }
-        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 80))
@@ -96,10 +103,6 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         alert()
     }
-    
-    
-    
-    
 }
 
 

@@ -23,12 +23,19 @@ class PageControl: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        pageControl.numberOfPages = imgArr.count
-        pageControl.currentPage = 0
+        sliderCollection.delegate.self
+        sliderCollection.dataSource.self
+        pageControl?.numberOfPages = imgArr.count
+        pageControl?.currentPage = 0
         DispatchQueue.main.async {
             self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
         }
     }
+    
+    private func register(classType: AnyClass) {
+            let id = String(describing: classType.self)
+        sliderCollection.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
+        }
     
     @objc func changeImage() {
         

@@ -36,11 +36,11 @@ class TVInteractor {
     func getDatosCountry() -> [Country] {
         var listCountry = [Country]()
         listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
-        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 2, cities: []))
-        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 3, cities: []))
-        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
-        listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
-        listCountry.append(Country(name:"Lima", urlImage: "https://st2.depositphotos.com/1482106/12306/i/950/depositphotos_123064476-stock-photo-waving-flag-of-lima-peru.jpg?forcejpeg=true", type: 2, cities: []))
+        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 4, cities: []))
+        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 2, cities: getDatosCities()))
+        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 2, cities: getDatosCities()))
+        listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 2, cities: getDatosCities()))
+        listCountry.append(Country(name:"Lima", urlImage: "https://st2.depositphotos.com/1482106/12306/i/950/depositphotos_123064476-stock-photo-waving-flag-of-lima-peru.jpg?forcejpeg=true", type: 1, cities: []))
         
        return listCountry
     }
@@ -56,15 +56,6 @@ class TVInteractor {
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
-        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
 
         //listCity.append(Cities(name: "Buenos aires", urlImage: "avatar1", type: 1))
         

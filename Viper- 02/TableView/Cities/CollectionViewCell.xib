@@ -54,6 +54,7 @@
             <connections>
                 <outlet property="cityname" destination="Vmr-tV-TgP" id="sHe-Av-UlO"/>
                 <outlet property="icon" destination="cj0-pT-YhG" id="l4O-Ji-3yp"/>
+                <outlet property="view" destination="Qcv-Mx-VoP" id="LZm-mt-4ii"/>
             </connections>
             <point key="canvasLocation" x="-27.536231884057973" y="127.90178571428571"/>
         </collectionViewCell>

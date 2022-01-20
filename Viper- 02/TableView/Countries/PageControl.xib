@@ -16,39 +16,15 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ePl-Rd-soR">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oNk-Ng-8Mv">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                    </collectionView>
-                </subviews>
                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                <constraints>
-                    <constraint firstItem="ePl-Rd-soR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AeX-pV-BZo"/>
-                    <constraint firstAttribute="trailing" secondItem="ePl-Rd-soR" secondAttribute="trailing" id="HaO-f8-H8U"/>
-                    <constraint firstItem="ePl-Rd-soR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bx2-Ys-ZSx"/>
-                    <constraint firstAttribute="bottom" secondItem="ePl-Rd-soR" secondAttribute="bottom" id="pCK-O0-DUN"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <connections>
-                <outlet property="sliderCollection" destination="ePl-Rd-soR" id="97S-Ou-xWW"/>
-            </connections>
             <point key="canvasLocation" x="111.59420289855073" y="147.99107142857142"/>
         </tableViewCell>
     </objects>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

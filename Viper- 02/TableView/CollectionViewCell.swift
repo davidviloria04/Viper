@@ -14,19 +14,6 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cityname: UILabel!
     @IBOutlet weak var icon: UIImageView!
     
-    //View #2
-    @IBOutlet weak var iconMiniApp02: UIImageView!
-    @IBOutlet weak var labelMiniApp02: UILabel!
-    
-    //View #3
-    @IBOutlet weak var iconMiniApp03: UIImageView!
-    @IBOutlet weak var labelMiniApp03: UILabel!
-    
-    //View #4
-    @IBOutlet weak var iconMiniApp04: UIImageView!
-    @IBOutlet weak var labelMiniApp04: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

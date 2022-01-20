@@ -79,9 +79,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "cityStyle3") as? cityStyle3 else { return UITableViewCell() }
-            cell.cityLabel.text = listCountry[indexPath.row].name
-            cell.fetchImage(urlString: listCountry[indexPath.row].urlImage)
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "PageControl") as? PageControl else { return UITableViewCell() }
             return cell
             
         }else{

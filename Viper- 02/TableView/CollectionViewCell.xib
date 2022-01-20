@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,141 +11,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Viper__02" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-Mx-VoP">
-                        <rect key="frame" x="5" y="5" width="80" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Claro-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-pT-YhG">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-tV-TgP" userLabel="citynameLabel">
-                                <rect key="frame" x="5" y="40" width="70" height="15"/>
+                                <rect key="frame" x="10" y="50" width="50" height="15"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Vmr-tV-TgP" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" constant="5" id="4dV-LL-Zxu"/>
-                            <constraint firstItem="cj0-pT-YhG" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" id="Eiv-dr-zfm"/>
-                            <constraint firstItem="Vmr-tV-TgP" firstAttribute="top" secondItem="cj0-pT-YhG" secondAttribute="bottom" id="Nfq-Ou-HvF"/>
-                            <constraint firstAttribute="trailing" secondItem="Vmr-tV-TgP" secondAttribute="trailing" constant="5" id="gnY-ae-Yxs"/>
-                            <constraint firstAttribute="bottom" secondItem="Vmr-tV-TgP" secondAttribute="bottom" constant="5" id="oez-Z4-4Un"/>
-                            <constraint firstAttribute="trailing" secondItem="cj0-pT-YhG" secondAttribute="trailing" id="pVx-hX-QlV"/>
-                            <constraint firstItem="cj0-pT-YhG" firstAttribute="top" secondItem="Qcv-Mx-VoP" secondAttribute="top" id="zWK-9K-tpO"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUC-ff-Ku6">
-                        <rect key="frame" x="90" y="5" width="80" height="60"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Claro-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-48-gj8">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Claro-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-pT-YhG">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="45"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-VW-veO" userLabel="citynameLabel">
-                                <rect key="frame" x="5" y="40" width="70" height="15"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EzU-VW-veO" firstAttribute="leading" secondItem="HUC-ff-Ku6" secondAttribute="leading" constant="5" id="2mS-2N-Mmj"/>
-                            <constraint firstAttribute="trailing" secondItem="EzU-VW-veO" secondAttribute="trailing" constant="5" id="8OC-wl-bqX"/>
-                            <constraint firstItem="EzU-VW-veO" firstAttribute="top" secondItem="qwS-48-gj8" secondAttribute="bottom" id="KqJ-tD-ewr"/>
-                            <constraint firstItem="qwS-48-gj8" firstAttribute="top" secondItem="HUC-ff-Ku6" secondAttribute="top" id="NbR-su-zSx"/>
-                            <constraint firstItem="qwS-48-gj8" firstAttribute="leading" secondItem="HUC-ff-Ku6" secondAttribute="leading" id="aH4-yz-83s"/>
-                            <constraint firstAttribute="trailing" secondItem="qwS-48-gj8" secondAttribute="trailing" id="bCE-4q-T9r"/>
-                            <constraint firstAttribute="bottom" secondItem="EzU-VW-veO" secondAttribute="bottom" constant="5" id="teP-zs-QVh"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arl-KN-cPp">
-                        <rect key="frame" x="175" y="5" width="81" height="60"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Claro-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="c8U-pv-2C0">
-                                <rect key="frame" x="0.0" y="0.0" width="81" height="40"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-Sx-X39" userLabel="citynameLabel">
-                                <rect key="frame" x="5" y="40" width="71" height="15"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Dbf-Sx-X39" secondAttribute="trailing" constant="5" id="357-Wq-7xf"/>
-                            <constraint firstItem="c8U-pv-2C0" firstAttribute="leading" secondItem="arl-KN-cPp" secondAttribute="leading" id="6Wl-dI-HVs"/>
-                            <constraint firstAttribute="trailing" secondItem="c8U-pv-2C0" secondAttribute="trailing" id="99j-4S-8M8"/>
-                            <constraint firstItem="c8U-pv-2C0" firstAttribute="top" secondItem="arl-KN-cPp" secondAttribute="top" id="Q3X-MR-GEp"/>
-                            <constraint firstItem="Dbf-Sx-X39" firstAttribute="leading" secondItem="arl-KN-cPp" secondAttribute="leading" constant="5" id="Xzy-DR-UAS"/>
-                            <constraint firstAttribute="bottom" secondItem="Dbf-Sx-X39" secondAttribute="bottom" constant="5" id="iig-Bq-7KS"/>
-                            <constraint firstItem="Dbf-Sx-X39" firstAttribute="top" secondItem="c8U-pv-2C0" secondAttribute="bottom" id="nx3-RR-dvt"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7D-IH-VtD">
-                        <rect key="frame" x="261" y="5" width="84" height="60"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Claro-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MfW-nU-hwV">
-                                <rect key="frame" x="0.0" y="0.0" width="84" height="40"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGx-aD-v8C" userLabel="citynameLabel">
-                                <rect key="frame" x="5" y="40" width="74" height="15"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="XGx-aD-v8C" firstAttribute="leading" secondItem="v7D-IH-VtD" secondAttribute="leading" constant="5" id="8Pb-ew-kOK"/>
-                            <constraint firstItem="MfW-nU-hwV" firstAttribute="leading" secondItem="v7D-IH-VtD" secondAttribute="leading" id="CPw-x5-amP"/>
-                            <constraint firstItem="XGx-aD-v8C" firstAttribute="top" secondItem="MfW-nU-hwV" secondAttribute="bottom" id="IHJ-fA-Blv"/>
-                            <constraint firstItem="MfW-nU-hwV" firstAttribute="top" secondItem="v7D-IH-VtD" secondAttribute="top" id="MnL-ai-WjH"/>
-                            <constraint firstAttribute="bottom" secondItem="XGx-aD-v8C" secondAttribute="bottom" constant="5" id="iv9-NJ-nAn"/>
-                            <constraint firstAttribute="trailing" secondItem="MfW-nU-hwV" secondAttribute="trailing" id="lWU-nQ-BmQ"/>
-                            <constraint firstAttribute="trailing" secondItem="XGx-aD-v8C" secondAttribute="trailing" constant="5" id="xsl-Q1-X5H"/>
+                            <constraint firstItem="Vmr-tV-TgP" firstAttribute="top" secondItem="cj0-pT-YhG" secondAttribute="bottom" constant="5" id="H2Q-zR-TVq"/>
+                            <constraint firstItem="Vmr-tV-TgP" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" constant="10" id="I0w-ag-tgk"/>
+                            <constraint firstItem="cj0-pT-YhG" firstAttribute="top" secondItem="Qcv-Mx-VoP" secondAttribute="top" id="Ijn-wQ-REE"/>
+                            <constraint firstAttribute="trailing" secondItem="cj0-pT-YhG" secondAttribute="trailing" id="ROv-zD-Ydh"/>
+                            <constraint firstAttribute="trailing" secondItem="Vmr-tV-TgP" secondAttribute="trailing" constant="10" id="XjK-7a-PxD"/>
+                            <constraint firstItem="cj0-pT-YhG" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" id="p5z-e2-dXT"/>
+                            <constraint firstAttribute="bottom" secondItem="Vmr-tV-TgP" secondAttribute="bottom" constant="5" id="yxw-f1-0vo"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="HUC-ff-Ku6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="31D-By-1Ns"/>
-                <constraint firstAttribute="bottom" secondItem="v7D-IH-VtD" secondAttribute="bottom" constant="5" id="4IX-40-jdN"/>
-                <constraint firstItem="HUC-ff-Ku6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="90" id="AfO-r5-1qM"/>
-                <constraint firstItem="v7D-IH-VtD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="261" id="BnP-ox-G2L"/>
-                <constraint firstItem="HUC-ff-Ku6" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="trailing" constant="5" id="RiV-lF-h4O"/>
-                <constraint firstItem="v7D-IH-VtD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="RlZ-ID-iN4"/>
-                <constraint firstAttribute="trailing" secondItem="v7D-IH-VtD" secondAttribute="trailing" constant="5" id="Tfl-Lb-c8s"/>
-                <constraint firstItem="v7D-IH-VtD" firstAttribute="leading" secondItem="arl-KN-cPp" secondAttribute="trailing" constant="5" id="V4V-eP-BpS"/>
-                <constraint firstItem="arl-KN-cPp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="175" id="X3D-zK-UxP"/>
-                <constraint firstItem="arl-KN-cPp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Ykf-pP-spq"/>
-                <constraint firstAttribute="bottom" secondItem="arl-KN-cPp" secondAttribute="bottom" constant="5" id="c5b-U6-ol7"/>
-                <constraint firstItem="arl-KN-cPp" firstAttribute="leading" secondItem="HUC-ff-Ku6" secondAttribute="trailing" constant="5" id="hKU-O0-J75"/>
-                <constraint firstAttribute="bottom" secondItem="Qcv-Mx-VoP" secondAttribute="bottom" constant="5" id="jZ1-Nf-qwE"/>
-                <constraint firstItem="Qcv-Mx-VoP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="lRo-RX-dFb"/>
-                <constraint firstAttribute="bottom" secondItem="HUC-ff-Ku6" secondAttribute="bottom" constant="5" id="oOu-o6-4hi"/>
-                <constraint firstItem="Qcv-Mx-VoP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="rDp-0N-nbK"/>
+                <constraint firstAttribute="trailing" secondItem="Qcv-Mx-VoP" secondAttribute="trailing" id="3A5-Ln-Ptk"/>
+                <constraint firstAttribute="bottom" secondItem="Qcv-Mx-VoP" secondAttribute="bottom" id="Jun-xR-LRh"/>
+                <constraint firstItem="Qcv-Mx-VoP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mq9-vr-zZh"/>
+                <constraint firstItem="Qcv-Mx-VoP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="us4-mM-LMi"/>
             </constraints>
-            <size key="customSize" width="225" height="204"/>
+            <size key="customSize" width="61" height="204"/>
             <connections>
                 <outlet property="cityname" destination="Vmr-tV-TgP" id="sHe-Av-UlO"/>
                 <outlet property="icon" destination="cj0-pT-YhG" id="l4O-Ji-3yp"/>
-                <outlet property="iconMiniApp02" destination="qwS-48-gj8" id="cWn-c3-qR0"/>
-                <outlet property="iconMiniApp03" destination="MfW-nU-hwV" id="xub-Vq-bJ8"/>
-                <outlet property="iconMiniApp04" destination="MfW-nU-hwV" id="qga-ez-nVt"/>
-                <outlet property="labelMiniApp02" destination="EzU-VW-veO" id="n9v-Lk-ref"/>
-                <outlet property="labelMiniApp03" destination="Dbf-Sx-X39" id="YoT-VD-eAd"/>
-                <outlet property="labelMiniApp04" destination="XGx-aD-v8C" id="Dll-QF-hUf"/>
             </connections>
-            <point key="canvasLocation" x="91.304347826086968" y="127.90178571428571"/>
+            <point key="canvasLocation" x="-27.536231884057973" y="127.90178571428571"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -36,7 +36,7 @@ class TVInteractor {
     func getDatosCountry() -> [Country] {
         var listCountry = [Country]()
         listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
-        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 3, cities: []))
+        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 2, cities: []))
         listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 3, cities: []))
         listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
         listCountry.append(Country(name:"Argentina", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities()))
@@ -55,6 +55,17 @@ class TVInteractor {
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+        listCity.append(Cities(name: "Tiempo", urlImage: "avatar1", type: 2))
+
         //listCity.append(Cities(name: "Buenos aires", urlImage: "avatar1", type: 1))
         
         return listCity

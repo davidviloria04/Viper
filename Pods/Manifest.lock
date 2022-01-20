@@ -1,0 +1,16 @@
+PODS:
+  - AssistantKit (0.7.1)
+
+DEPENDENCIES:
+  - AssistantKit
+
+SPEC REPOS:
+  trunk:
+    - AssistantKit
+
+SPEC CHECKSUMS:
+  AssistantKit: 245d28aefcf3aeae240c8ecbe3c62714e3f1c6d4
+
+PODFILE CHECKSUM: e37b772691372a7dbff9456c620520aac0e8899f
+
+COCOAPODS: 1.11.2

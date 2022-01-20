@@ -9,12 +9,10 @@ import UIKit
 import SkeletonView
 
 class TVViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     var presenter: TVPresenterProtocol?
     var numRow: Int = 0
     var listCountry = [Country]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,12 +26,11 @@ class TVViewController: UIViewController {
         register(classType: MyCollectionViewCell.self)
         register(classType: cityStyle3.self)
         tableView.reloadData()
-        
         //Skeleton
         setupSkeleton()
         
+        
     }
-    
     
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
@@ -48,6 +45,8 @@ class TVViewController: UIViewController {
         let alert = UIAlertController(title: "Pulsado", message: "Haz pulsado", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alert, animated: true)
+        debugPrint()
+        
     }
 }
 
@@ -99,7 +98,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         alert()
     }
     
-    
+   
     
     
 }

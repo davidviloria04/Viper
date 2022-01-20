@@ -49,13 +49,38 @@ class TVInteractor {
         var listCity = [Cities]()
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Jumanji", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        
+        return listCity
+    }
+    func getDatosCities2() -> [Cities] {
+        var listCity = [Cities]()
         listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        //listCity.append(Cities(name: "Buenos aires", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Jumanji", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        
+        return listCity
+    }
+    func getDatosCities3() -> [Cities] {
+        var listCity = [Cities]()
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Jumanji", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
         
         return listCity
     }

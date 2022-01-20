@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AssistantKit
 
 class Mod1TitleTableViewCell: UITableViewCell{
     
@@ -19,10 +20,7 @@ class Mod1TitleTableViewCell: UITableViewCell{
     private let itemsPerRow: CGFloat = 2
     var delegate : TVViewController?
     var listCities = [Cities]()
-    
-    
-    
-   
+    let family = Device.screen.family
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +29,7 @@ class Mod1TitleTableViewCell: UITableViewCell{
         register(classType: CollectionViewCell.self)
         self.citiesCV.collectionViewLayout = flowLayout
         citiesCV.reloadData()
-
+        
         // Initialization code
     }
     
@@ -39,6 +37,19 @@ class Mod1TitleTableViewCell: UITableViewCell{
             let id = String(describing: classType.self)
         citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
+    var flowLayout: UICollectionViewFlowLayout {
+        let _flowLayout = UICollectionViewFlowLayout()
+        // edit properties here
+        //if traitCollection.verticalSizeClass == .regular {_flowLayout.itemSize = CGSize(width: 80, height: 80)}
+        //if traitCollection.verticalSizeClass == .compact {_flowLayout.itemSize = CGSize(width: 50, height: 50)
+        
+        _flowLayout.itemSize = CGSize(width: 80, height: 80)
+        _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        _flowLayout.minimumInteritemSpacing = 4
+        // edit properties here
+
+        return _flowLayout
+    }
     
 }
 
@@ -54,18 +65,10 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
         delegate?.alert()
+        debugPrint(family)
     }
     
 }
-var flowLayout: UICollectionViewFlowLayout {
-    let _flowLayout = UICollectionViewFlowLayout()
-    // edit properties here
-    _flowLayout.itemSize = CGSize(width: 80, height: 80)
-    _flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    _flowLayout.minimumInteritemSpacing = 4
-    // edit properties here
 
-    return _flowLayout
-}
 
 

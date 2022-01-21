@@ -11,8 +11,8 @@ import UIKit
 class Mod2TitleTableViewCell: UITableViewCell {
   
     @IBOutlet weak var label: UILabel!
-    
     @IBOutlet weak var buttonVerMas: UIButton!
+    var delegate: TVViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +21,13 @@ class Mod2TitleTableViewCell: UITableViewCell {
     }
     
     @IBAction func buttonVerMas(_ sender: UIButton) {
-       
+       showAlert()
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Ver mas", message: "Haz pulsado el botón ver  mas", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ir a Ver mas", style: .default))
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
     }
 }
 

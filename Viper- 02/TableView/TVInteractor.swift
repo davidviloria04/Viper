@@ -71,8 +71,8 @@ class TVInteractor {
         listAr.append(Shortcuts(name: "Sky", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Promos", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Prestamo", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Expedia", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Pase", urlImage: "0", type: 1))
+        listAr.append(Shortcuts(name: "Expedia", urlImage: "2", type: 1))
+        listAr.append(Shortcuts(name: "Pase", urlImage: "1", type: 1))
         
         return listAr
     }

@@ -35,11 +35,13 @@ class TVInteractor {
     
     func getDatosCountry() -> [Country] {
         var listCountry = [Country]()
-        listCountry.append(Country(name:"España" , urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 4, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"Mexico", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, cities: getDatosCities(), shortcuts: []))
-        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 5, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"Perú", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png" , type: 4, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"Colombia", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 2, cities: getDatosCities(), shortcuts: getDatosAR()))
+        
+        listCountry.append(Country(name:"" , urlImage: "", type: 3, cities: [], shortcuts: []))
+        listCountry.append(Country(name:"" , urlImage: "", type: 4, cities: [], shortcuts: []))
+        listCountry.append(Country(name:"", urlImage: "", type: 1, cities: getDatosCities(), shortcuts: []))
+        listCountry.append(Country(name:"", urlImage: "", type: 5, cities: [], shortcuts: []))
+        listCountry.append(Country(name:"", urlImage: "" , type: 4, cities: [], shortcuts: []))
+        listCountry.append(Country(name:"", urlImage: "", type: 2, cities: getDatosCities(), shortcuts: getDatosAR()))
         
        return listCountry
     }

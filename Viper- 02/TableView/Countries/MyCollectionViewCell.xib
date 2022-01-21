@@ -59,6 +59,7 @@
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="WgZ-G3-QRh" secondAttribute="bottom" id="CZh-2n-IYO"/>
                 <constraint firstAttribute="trailing" secondItem="WgZ-G3-QRh" secondAttribute="trailing" id="eol-0m-8jO"/>

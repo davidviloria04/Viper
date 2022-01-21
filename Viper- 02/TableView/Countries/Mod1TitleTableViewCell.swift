@@ -73,13 +73,13 @@ class Mod1TitleTableViewCell: UITableViewCell{
             return sizew = 60
         }
         if (family == .medium) {
-            return sizew = 80
+            return sizew = 120
         }
         if (family == .small) {
             return sizew = 70
         }
         if (family == .big) {
-            return sizew = 100
+            return sizew = 120
         }
     }
     

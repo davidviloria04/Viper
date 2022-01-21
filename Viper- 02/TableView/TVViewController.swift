@@ -29,6 +29,7 @@ class TVViewController: UIViewController {
         register(classType: cityStyle3.self)
         register(classType: Mod2TitleTableViewCell.self)
         register(classType: Mod3TableViewCell.self)
+        register(classType: BannerTableViewCell.self)
         tableView.reloadData()
         
         //Skeleton
@@ -90,8 +91,12 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
             }
             return cell
-        } else{
+        } else if (listCountry[indexPath.row].type == 4){
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()
+            }
+            return cell
+        } else {
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()
             }
             return cell
         }

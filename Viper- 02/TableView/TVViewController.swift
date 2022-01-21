@@ -64,6 +64,8 @@ extension TVViewController: TVViewProtocol{
         self.listCountry = countries
     }
     
+    
+    
     // TODO: implement view output methods
     
 }
@@ -82,7 +84,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             
         } else if (listCountry[indexPath.row].type == 2) {
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? Mod3TableViewCell else { return UITableViewCell() }
-            cell.listCities = listCountry[indexPath.row].cities
+            cell.listAr = listCountry[indexPath.row].shortcuts
             cell.delegate = self
             return cell
             

@@ -12,11 +12,9 @@ class Mod3TableViewCell: UITableViewCell{
     
     @IBOutlet weak var citiesCV: UICollectionView!
     
-    //citiesCV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-    
     private var indexPath: IndexPath?
     var delegate : TVViewController?
-    var listCities = [Cities]()
+    var listAr = [Shortcuts]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,12 +36,12 @@ class Mod3TableViewCell: UITableViewCell{
 
 extension Mod3TableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listCities.count
+        return self.listAr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
-            cell.labelAR.text = listCities[indexPath.row].name
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
+            cell.labelAR.text = listAr[indexPath.row].name
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {

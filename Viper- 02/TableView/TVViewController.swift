@@ -52,6 +52,12 @@ class TVViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alert, animated: true)
     }
+    func showAlert(){
+        let alert = UIAlertController(title: "Ver mas", message: "Haz pulsado el botón ver  mas", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ir a Ver mas", style: .default))
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
+        self.present(alert, animated: true)
+    }
 }
 
 extension TVViewController: TVViewProtocol{
@@ -94,8 +100,8 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             }
             return cell
         } else if (listCountry[indexPath.row].type == 4){
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()
-            }
+            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()}
+            cell.delegate = self
             return cell
         } else {
             guard var cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()

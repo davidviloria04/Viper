@@ -69,7 +69,7 @@ class TVInteractor {
         listAr.append(Shortcuts(name: "Telcel", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Cerca de mi", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "CFE", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Sky", urlImage: "0", type: 1))
+        listAr.append(Shortcuts(name: "Sky", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1))
         listAr.append(Shortcuts(name: "Promos", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Prestamo", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Expedia", urlImage: "0", type: 1))

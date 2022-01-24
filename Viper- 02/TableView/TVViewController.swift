@@ -36,8 +36,6 @@ class TVViewController: UIViewController {
         setupSkeleton()
         
     }
-    
-    
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
         tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
@@ -70,9 +68,6 @@ extension TVViewController: TVViewProtocol{
         print(countries)
         self.listCountry = countries
     }
-    
-    
-    
     // TODO: implement view output methods
     
 }

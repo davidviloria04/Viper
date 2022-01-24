@@ -7,24 +7,24 @@
 
 import Foundation
 
-public struct Country {
+public struct Apps {
 
     public var name: String
     public var urlImage: String
     public var type: Int = 0
-    public var cities: [Cities]
+    public var miniApps: [MiniApps]
     public var shortcuts: [Shortcuts]
     
-    init(name: String, urlImage: String, type: Int, cities: [Cities], shortcuts: [Shortcuts]){
+    init(name: String, urlImage: String, type: Int, miniApps: [MiniApps], shortcuts: [Shortcuts]){
         self.name = name
         self.urlImage = urlImage
         self.type = type
-        self.cities = cities
+        self.miniApps = miniApps
         self.shortcuts = shortcuts
     }
 }
 
-public struct Cities{
+public struct MiniApps{
     public var name: String
     public var urlImage: String
     public var type: Int = 0

@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-protocol CVViewProtocol: class {
+protocol CVViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: CVPresenterProtocol? { get set }
 }
 
-protocol CVWireFrameProtocol: class {
+protocol CVWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
     static func createCVModule() -> UIViewController
 }
 
-protocol CVPresenterProtocol: class {
+protocol CVPresenterProtocol: AnyObject {
     // VIEW -> PRESENTER
     var view: CVViewProtocol? { get set }
     var interactor: CVInteractorInputProtocol? { get set }
@@ -28,11 +28,11 @@ protocol CVPresenterProtocol: class {
     func viewDidLoad()
 }
 
-protocol CVInteractorOutputProtocol: class {
+protocol CVInteractorOutputProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
 }
 
-protocol CVInteractorInputProtocol: class {
+protocol CVInteractorInputProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
     var presenter: CVInteractorOutputProtocol? { get set }
 }

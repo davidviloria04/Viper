@@ -8,7 +8,7 @@
 import Foundation
 
 extension TVInteractor: TVInteractorProtocol {
-    func getCountries() -> [Country] {
+    func getCountries() -> [Apps] {
         return getDatosCountry()
     }
     func getDatos() -> [String] {
@@ -33,32 +33,31 @@ class TVInteractor {
     }
     
     
-    func getDatosCountry() -> [Country] {
-        var listCountry = [Country]()
+    func getDatosCountry() -> [Apps] {
+        var listCountry = [Apps]()
         
-        listCountry.append(Country(name:"" , urlImage: "", type: 3, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"" , urlImage: "", type: 4, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"", urlImage: "", type: 1, cities: getDatosCities(), shortcuts: []))
-        listCountry.append(Country(name:"", urlImage: "", type: 5, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"", urlImage: "" , type: 4, cities: [], shortcuts: []))
-        listCountry.append(Country(name:"", urlImage: "", type: 2, cities: getDatosCities(), shortcuts: getDatosAR()))
+        listCountry.append(Apps(name:"" , urlImage: "", type: 3, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(name:"" , urlImage: "", type: 4, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(name:"", urlImage: "", type: 1, miniApps: getDatosCities(), shortcuts: []))
+        listCountry.append(Apps(name:"", urlImage: "", type: 5, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(name:"", urlImage: "" , type: 4, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(name:"", urlImage: "", type: 2, miniApps: getDatosCities(), shortcuts: getDatosAR()))
         
        return listCountry
     }
     
-    func getDatosCities() -> [Cities] {
-        var listCity = [Cities]()
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(Cities(name: "Claro", urlImage: "avatar1", type: 1))
+    func getDatosCities() -> [MiniApps] {
+        var listCity = [MiniApps]()
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
 
-        
         return listCity
     }
     

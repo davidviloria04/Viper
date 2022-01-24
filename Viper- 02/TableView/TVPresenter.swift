@@ -14,13 +14,12 @@ class TVPresenter {
     var interactor: TVInteractorProtocol?
     var router: TVRouterProtocol?
     
-    var countries : [Country]?
+    var countries : [Apps]?
     
     init(interactor: TVInteractorProtocol, router: TVRouterProtocol) {
         self.interactor = interactor
         self.router = router
     }
-    
 }
 
 extension TVPresenter: TVPresenterProtocol {

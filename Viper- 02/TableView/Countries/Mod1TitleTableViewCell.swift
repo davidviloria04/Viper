@@ -18,7 +18,7 @@ class Mod1TitleTableViewCell: UITableViewCell{
     
     private var indexPath: IndexPath?
     var delegate : TVViewController?
-    var listCities = [Cities]()
+    var listCities = [MiniApps]()
     let family = Device.screen.family
 //    var sizeh = 0
 //    var sizew = 0
@@ -92,7 +92,7 @@ extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
             cell.cityname.text = listCities[indexPath.row].name
             return cell
     }

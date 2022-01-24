@@ -13,7 +13,7 @@ class TVViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: TVPresenterProtocol?
     var numRow: Int = 0
-    var listCountry = [Country]()
+    var listCountry = [Apps]()
     let screenSize: CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
@@ -64,7 +64,7 @@ extension TVViewController: TVViewProtocol{
         print(numCountry)
     }
     
-    func ViewCountry(countries: [Country]) {
+    func ViewCountry(countries: [Apps]) {
         print(countries)
         self.listCountry = countries
     }
@@ -79,36 +79,36 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCountry[indexPath.row].type == 1) {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
-            cell.listCities = listCountry[indexPath.row].cities
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
+            cell.listCities = listCountry[indexPath.row].miniApps
             cell.delegate = self
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? Mod3TableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? Mod3TableViewCell else { return UITableViewCell() }
             cell.listAr = listCountry[indexPath.row].shortcuts
             cell.delegate = self
             return cell
             
         }else if (listCountry[indexPath.row].type == 3){
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
             }
             return cell
         } else if (listCountry[indexPath.row].type == 4){
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()}
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()}
             cell.delegate = self
             return cell
         } else {
-            guard var cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()
             }
             return cell
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(listCountry[indexPath.row].type == 4){
-            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].cities.count/4) * 90))
+            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
         } else {
-            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].cities.count/4) * 120))
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 120))
 
         }
         

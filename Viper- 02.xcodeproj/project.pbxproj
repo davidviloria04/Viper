@@ -30,8 +30,6 @@
 		3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */; };
 		3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */; };
 		3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */; };
-		3F6F234827975B6200FE80CE /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F234627975B6200FE80CE /* PageControl.swift */; };
-		3F6F234927975B6200FE80CE /* PageControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F234727975B6200FE80CE /* PageControl.xib */; };
 		3F6F234C2797613E00FE80CE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F234A2797613E00FE80CE /* Banner.swift */; };
 		3F6F234D2797613E00FE80CE /* banner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F234B2797613E00FE80CE /* banner.xib */; };
 		3F731160278785C600E07EDC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 3F73115F278785C600E07EDC /* SkeletonView */; };
@@ -81,8 +79,6 @@
 		3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		3F6F234627975B6200FE80CE /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
-		3F6F234727975B6200FE80CE /* PageControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControl.xib; sourceTree = "<group>"; };
 		3F6F234A2797613E00FE80CE /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		3F6F234B2797613E00FE80CE /* banner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = banner.xib; sourceTree = "<group>"; };
 		3F80F067277BBE6E00C8C787 /* XIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
@@ -220,8 +216,6 @@
 				3F88592E277CEAD70015C98F /* Mod2TitleTableViewCell.xib */,
 				3F1BA826278378AB00171E6C /* MyCollectionViewCell.swift */,
 				3F1BA8242783785600171E6C /* MyCollectionViewCell.xib */,
-				3F6F234627975B6200FE80CE /* PageControl.swift */,
-				3F6F234727975B6200FE80CE /* PageControl.xib */,
 				3F2FEC95279A01A1008B9AAD /* Mod3TableViewCell.swift */,
 				3F2FEC96279A01A1008B9AAD /* Mod3TableViewCell.xib */,
 				FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */,
@@ -323,7 +317,6 @@
 				3F80F074277BCADC00C8C787 /* Mod1TitleTableViewCell.xib in Resources */,
 				3F40A795276BD89800D147A3 /* Main.storyboard in Resources */,
 				FB87D800278640BD006056BE /* CollectionViewCell.xib in Resources */,
-				3F6F234927975B6200FE80CE /* PageControl.xib in Resources */,
 				FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */,
 				3F2FEC98279A01A1008B9AAD /* Mod3TableViewCell.xib in Resources */,
 				3F1BA8252783785600171E6C /* MyCollectionViewCell.xib in Resources */,
@@ -404,7 +397,6 @@
 				3F40A7A5276BD8CE00D147A3 /* HomeInteractor.swift in Sources */,
 				3F40A790276BD89800D147A3 /* SceneDelegate.swift in Sources */,
 				3F88592B277CEA930015C98F /* Mod2TitleTableViewCell.swift in Sources */,
-				3F6F234827975B6200FE80CE /* PageControl.swift in Sources */,
 				3FA63309277A596A002D81FD /* CVPresenter.swift in Sources */,
 				3F6F234C2797613E00FE80CE /* Banner.swift in Sources */,
 				3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */,

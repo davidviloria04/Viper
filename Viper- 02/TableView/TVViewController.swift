@@ -26,7 +26,6 @@ class TVViewController: UIViewController {
         
         register(classType: Mod1TitleTableViewCell.self)
         register(classType: MyCollectionViewCell.self)
-        register(classType: cityStyle3.self)
         register(classType: Mod2TitleTableViewCell.self)
         register(classType: Mod3TableViewCell.self)
         register(classType: BannerTableViewCell.self)

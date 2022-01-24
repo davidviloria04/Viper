@@ -32,10 +32,10 @@
                             <constraint firstAttribute="trailing" secondItem="dr0-iD-swG" secondAttribute="trailing" id="uwN-sB-LhP"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-89-cLw">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-89-cLw">
                         <rect key="frame" x="10" y="74" width="80" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="BSz-jC-Fjk"/>
+                            <constraint firstAttribute="height" constant="21" id="Roo-5i-6th"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>

@@ -197,8 +197,8 @@
 		3FCA9D792784C6F80071C787 /* Cities */ = {
 			isa = PBXGroup;
 			children = (
-				FB87D7F92784EDD2006056BE /* cityStyle2.xib */,
 				FB87D7FB2784EE78006056BE /* cityStyle2.swift */,
+				FB87D7F92784EDD2006056BE /* cityStyle2.xib */,
 				3F2FEC912799EB75008B9AAD /* AccesosRapidos.swift */,
 				3F2FEC922799EB75008B9AAD /* AccesosRapidos.xib */,
 				FB87D7FD278640BC006056BE /* CollectionViewCell.swift */,

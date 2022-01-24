@@ -12,15 +12,12 @@ class AccesosRapidos: UICollectionViewCell {
     @IBOutlet weak var iconAR: UIImageView!
     @IBOutlet weak var labelAR: UILabel!
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         setupSkeleton()
         loadData()
     }
-    
     
     private func setupSkeleton(){
         labelAR.isSkeletonable = true
@@ -60,5 +57,4 @@ class AccesosRapidos: UICollectionViewCell {
             self.iconAR.hideSkeleton()
         }
     }
-
 }

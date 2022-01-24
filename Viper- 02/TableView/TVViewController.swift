@@ -25,10 +25,10 @@ class TVViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        register(classType: Mod1TitleTableViewCell.self)
-        register(classType: MyCollectionViewCell.self)
-        register(classType: Mod2TitleTableViewCell.self)
-        register(classType: Mod3TableViewCell.self)
+        register(classType: HomeTableViewCell.self)
+        register(classType: Greetings.self)
+        register(classType: showMoreShorcuts.self)
+        register(classType: MiniAppsShorcuts.self)
         register(classType: BannerTableViewCell.self)
         tableView.reloadData()
         
@@ -79,23 +79,23 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCountry[indexPath.row].type == 1) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? Mod1TitleTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? HomeTableViewCell else { return UITableViewCell() }
             cell.listCities = listCountry[indexPath.row].miniApps
             cell.delegate = self
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? Mod3TableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? MiniAppsShorcuts else { return UITableViewCell() }
             cell.listAr = listCountry[indexPath.row].shortcuts
             cell.delegate = self
             return cell
             
         }else if (listCountry[indexPath.row].type == 3){
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? MyCollectionViewCell else { return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? Greetings else { return UITableViewCell()
             }
             return cell
         } else if (listCountry[indexPath.row].type == 4){
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? Mod2TitleTableViewCell else { return UITableViewCell()}
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? showMoreShorcuts else { return UITableViewCell()}
             cell.delegate = self
             return cell
         } else {

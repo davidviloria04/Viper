@@ -9,7 +9,7 @@
 import UIKit
 import SkeletonView
 
-class MyCollectionViewCell: UITableViewCell {
+class Greetings: UITableViewCell {
 
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var lbName: UILabel!

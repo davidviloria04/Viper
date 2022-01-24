@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Mod2TitleTableViewCell: UITableViewCell {
+class showMoreShorcuts: UITableViewCell {
   
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var buttonVerMas: UIButton!
@@ -23,7 +23,5 @@ class Mod2TitleTableViewCell: UITableViewCell {
     @IBAction func buttonVerMas(_ sender: UIButton) {
         delegate?.showAlert()
     }
-    
-    
 }
 

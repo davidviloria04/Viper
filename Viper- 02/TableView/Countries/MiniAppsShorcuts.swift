@@ -1,50 +1,46 @@
 //
-//  TitleTableViewCell.swift
-//  SDKTransfer
+//  Mod3TableViewCell.swift
+//  Viper- 02
 //
-//  Created by Juan Carlos Balderas Saldaña on 30/04/21.
-//  Copyright © 2021 Diego Palomares Castro. All rights reserved.
+//  Created by David Viloria Ortega on 20/01/22.
 //
 
 import UIKit
 import AssistantKit
 
-class Mod1TitleTableViewCell: UITableViewCell{
+class MiniAppsShorcuts: UITableViewCell{
     
     
     @IBOutlet weak var citiesCV: UICollectionView!
     
-    //citiesCV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-    
     private var indexPath: IndexPath?
     var delegate : TVViewController?
-    var listCities = [MiniApps]()
+    var listAr = [Shortcuts]()
     let family = Device.screen.family
+    let screenSize: CGRect = UIScreen.main.bounds
 //    var sizeh = 0
 //    var sizew = 0
-    let screenSize: CGRect = UIScreen.main.bounds
     
     override func awakeFromNib() {
         super.awakeFromNib()
         citiesCV.dataSource = self
         citiesCV.delegate = self
-        register(classType: CollectionViewCell.self)
+        register(classType: AccesosRapidos.self)
 //        screenSizeH()
 //        screenSizeW()
-        self.citiesCV.collectionViewLayout = flowLayout
-        
+        self.citiesCV.collectionViewLayout = flowLayout2
         citiesCV.reloadData()
 
         // Initialization code
     }
-    var flowLayout: UICollectionViewFlowLayout {
+    var flowLayout2: UICollectionViewFlowLayout {
         let flowLayout = UICollectionViewFlowLayout()
         // edit properties here
-        flowLayout.itemSize = CGSize(width: screenSize.width / 4, height: screenSize.height / 10)
-        //flowLayout.itemSize = CGSize(width: sizew , height: sizeh)
-        flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        flowLayout.itemSize = CGSize(width: screenSize.width / 5, height: screenSize.height / 10)
+        //flowLayout.itemSize = CGSize(width: sizew, height: sizeh)
+        flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 5, right: 10)
         flowLayout.minimumInteritemSpacing = 4
-        // edit properties hered
+        // edit properties here
 
         return flowLayout
     }
@@ -53,13 +49,12 @@ class Mod1TitleTableViewCell: UITableViewCell{
             let id = String(describing: classType.self)
         citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
-    
 //    public func screenSizeH(){
 //        if (family == .old) {
 //            return sizeh = 50
 //        }
 //        if (family == .medium) {
-//            return sizeh = 100
+//            return sizeh = 120
 //        }
 //        if (family == .small) {
 //            return sizeh = 70
@@ -80,28 +75,26 @@ class Mod1TitleTableViewCell: UITableViewCell{
 //            return sizew = 70
 //        }
 //        if (family == .big) {
-//            return sizew = 100
+//            return sizew = 120
 //        }
 //    }
     
 }
 
-extension Mod1TitleTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
+extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listCities.count
+        return self.listAr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
-            cell.cityname.text = listCities[indexPath.row].name
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
+            cell.labelAR.text = listAr[indexPath.row].name
+        cell.fetchImage(urlString: listAr[indexPath.row].urlImage)
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
         delegate?.alert()
-        debugPrint(family)
     }
     
 }
-
-
 

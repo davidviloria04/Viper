@@ -14,6 +14,7 @@ class TVViewController: UIViewController {
     var presenter: TVPresenterProtocol?
     var numRow: Int = 0
     var listCountry = [Country]()
+    let screenSize: CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +105,14 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 90))
+        if(listCountry[indexPath.row].type == 4){
+            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].cities.count/4) * 90))
+        } else {
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].cities.count/4) * 120))
+
+        }
+        
+        //return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 90))
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

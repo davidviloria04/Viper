@@ -20,16 +20,17 @@ class Mod1TitleTableViewCell: UITableViewCell{
     var delegate : TVViewController?
     var listCities = [Cities]()
     let family = Device.screen.family
-    var sizeh = 0
-    var sizew = 0
+//    var sizeh = 0
+//    var sizew = 0
+    let screenSize: CGRect = UIScreen.main.bounds
     
     override func awakeFromNib() {
         super.awakeFromNib()
         citiesCV.dataSource = self
         citiesCV.delegate = self
         register(classType: CollectionViewCell.self)
-        screenSizeH()
-        screenSizeW()
+//        screenSizeH()
+//        screenSizeW()
         self.citiesCV.collectionViewLayout = flowLayout
         
         citiesCV.reloadData()
@@ -39,11 +40,11 @@ class Mod1TitleTableViewCell: UITableViewCell{
     var flowLayout: UICollectionViewFlowLayout {
         let flowLayout = UICollectionViewFlowLayout()
         // edit properties here
-        
-        flowLayout.itemSize = CGSize(width: sizew , height: sizeh)
-        flowLayout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        flowLayout.itemSize = CGSize(width: screenSize.width / 4, height: screenSize.height / 10)
+        //flowLayout.itemSize = CGSize(width: sizew , height: sizeh)
+        flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
         flowLayout.minimumInteritemSpacing = 4
-        // edit properties here
+        // edit properties hered
 
         return flowLayout
     }
@@ -53,35 +54,35 @@ class Mod1TitleTableViewCell: UITableViewCell{
         citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
     
-    public func screenSizeH(){
-        if (family == .old) {
-            return sizeh = 50
-        }
-        if (family == .medium) {
-            return sizeh = 100
-        }
-        if (family == .small) {
-            return sizeh = 70
-        }
-        if (family == .big) {
-            return sizeh = 100
-        }
-    }
+//    public func screenSizeH(){
+//        if (family == .old) {
+//            return sizeh = 50
+//        }
+//        if (family == .medium) {
+//            return sizeh = 100
+//        }
+//        if (family == .small) {
+//            return sizeh = 70
+//        }
+//        if (family == .big) {
+//            return sizeh = 100
+//        }
+//    }
     
-    public func screenSizeW(){
-        if (family == .old) {
-            return sizew = 60
-        }
-        if (family == .medium) {
-            return sizew = 100
-        }
-        if (family == .small) {
-            return sizew = 70
-        }
-        if (family == .big) {
-            return sizew = 100
-        }
-    }
+//    public func screenSizeW(){
+//        if (family == .old) {
+//            return sizew = 60
+//        }
+//        if (family == .medium) {
+//            return sizew = 100
+//        }
+//        if (family == .small) {
+//            return sizew = 70
+//        }
+//        if (family == .big) {
+//            return sizew = 100
+//        }
+//    }
     
 }
 

@@ -65,7 +65,7 @@ class TVInteractor {
         var listAr = [Shortcuts]()
         listAr.append(Shortcuts(name: "Musica", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Noticias", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "¿Como pagar en XXXXX? ", urlImage: "0", type: 1))
+        listAr.append(Shortcuts(name: "¿Que es Claro Pay ", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Telmex", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Telcel", urlImage: "0", type: 1))
         listAr.append(Shortcuts(name: "Cerca de mi", urlImage: "0", type: 1))

@@ -90,6 +90,7 @@ extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSourc
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
             cell.labelAR.text = listAr[indexPath.row].name
         cell.fetchImage(urlString: listAr[indexPath.row].urlImage)
+        cell.labelAR.numberOfLines = 0
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {

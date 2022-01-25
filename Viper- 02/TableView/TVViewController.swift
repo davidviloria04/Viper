@@ -79,23 +79,23 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCountry[indexPath.row].type == 1) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod1TitleTableViewCell") as? HomeTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell") as? HomeTableViewCell else { return UITableViewCell() }
             cell.listCities = listCountry[indexPath.row].miniApps
             cell.delegate = self
             return cell
             
         } else if (listCountry[indexPath.row].type == 2) {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod3TableViewCell") as? MiniAppsShorcuts else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MiniAppsShorcuts") as? MiniAppsShorcuts else { return UITableViewCell() }
             cell.listAr = listCountry[indexPath.row].shortcuts
             cell.delegate = self
             return cell
             
         }else if (listCountry[indexPath.row].type == 3){
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionViewCell") as? Greetings else { return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Greetings") as? Greetings else { return UITableViewCell()
             }
             return cell
         } else if (listCountry[indexPath.row].type == 4){
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Mod2TitleTableViewCell") as? showMoreShorcuts else { return UITableViewCell()}
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "showMoreShorcuts") as? showMoreShorcuts else { return UITableViewCell()}
             cell.delegate = self
             return cell
         } else {
@@ -111,7 +111,6 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 120))
 
         }
-        
         //return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 90))
     }
     

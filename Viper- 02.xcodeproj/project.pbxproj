@@ -32,7 +32,6 @@
 		3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */; };
 		3F6F234C2797613E00FE80CE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F234A2797613E00FE80CE /* Banner.swift */; };
 		3F6F234D2797613E00FE80CE /* banner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F234B2797613E00FE80CE /* banner.xib */; };
-		3F731160278785C600E07EDC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 3F73115F278785C600E07EDC /* SkeletonView */; };
 		3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F067277BBE6E00C8C787 /* XIBViewController.swift */; };
 		3F80F06A277BBE6E00C8C787 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F80F068277BBE6E00C8C787 /* XIBViewController.xib */; };
 		3F80F06C277BBEC000C8C787 /* XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F06B277BBEC000C8C787 /* XIB.swift */; };
@@ -108,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F731160278785C600E07EDC /* SkeletonView in Frameworks */,
 				14542D85365D10E0C0E117A5 /* Pods_Viper__02.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +258,6 @@
 			);
 			name = "Viper- 02";
 			packageProductDependencies = (
-				3F73115F278785C600E07EDC /* SkeletonView */,
 			);
 			productName = "Viper- 02";
 			productReference = 3F40A78A276BD89800D147A3 /* Viper- 02.app */;
@@ -291,7 +288,6 @@
 			);
 			mainGroup = 3F40A781276BD89800D147A3;
 			packageReferences = (
-				3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 3F40A78B276BD89800D147A3 /* Products */;
 			projectDirPath = "";
@@ -622,25 +618,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Juanpe/SkeletonView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3F73115F278785C600E07EDC /* SkeletonView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3F73115E278785C600E07EDC /* XCRemoteSwiftPackageReference "SkeletonView" */;
-			productName = SkeletonView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F40A782276BD89800D147A3 /* Project object */;
 }

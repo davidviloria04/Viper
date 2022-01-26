@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 class TVViewController: UIViewController {
     
@@ -33,16 +32,12 @@ class TVViewController: UIViewController {
         tableView.reloadData()
         
         //Skeleton
-        setupSkeleton()
+        
         
     }
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
         tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
-    }
-    
-    private func setupSkeleton(){
-        tableView.isSkeletonable = true
     }
     
     func alert(){

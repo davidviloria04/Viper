@@ -101,16 +101,51 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(listCountry[indexPath.row].type == 4){
+            if(screenSize.height >= 667 && screenSize.height <= 736)
+            {return CGFloat((Int(screenSize.maxY)/6) + ((listCountry[indexPath.row].miniApps.count/4) * 100))}
+            if(screenSize.height > 736 && screenSize.height <= 812)
+            {return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 50))}
+            
             return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
-        } else {
-            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 120))
+        }
+        if(listCountry[indexPath.row].type == 3){
+            if(screenSize.height >= 667 && screenSize.height <= 736)
+            {return CGFloat((Int(screenSize.maxY)/7) + ((listCountry[indexPath.row].miniApps.count/4) * 100))}
+            if(screenSize.height > 736 && screenSize.height <= 896)
+            {return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 90))}
+            if(screenSize.height >= 926)
+            {return CGFloat((Int(screenSize.maxY)/11) + ((listCountry[indexPath.row].miniApps.count/4) * 90))}
+            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+        }
+        if (listCountry[indexPath.row].type == 1) {
+            if (screenSize.height > 736 && screenSize.height <= 896){
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            }
+            if (screenSize.height >= 926){
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
+            }
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
 
         }
-        //return CGFloat(100 + ((listCountry[indexPath.row].cities.count/4) * 90))
+        if (listCountry[indexPath.row].type == 2) {
+            if (screenSize.height > 736 && screenSize.height <= 896){
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            }
+            if (screenSize.height >= 926){
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
+            }
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+
+        }
+        else {
+            return CGFloat(100 + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         alert()
+        debugPrint(screenSize.height)
     }
 }
 

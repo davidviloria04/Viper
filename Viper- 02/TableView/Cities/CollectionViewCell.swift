@@ -20,5 +20,7 @@ class CollectionViewCell: UICollectionViewCell {
         // Initialization code
         view.layer.cornerRadius = 10.0
         view.clipsToBounds = true
+        isNew.layer.cornerRadius = 5.0
+        isNew.clipsToBounds = true
     }
 }

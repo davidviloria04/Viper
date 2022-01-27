@@ -11,12 +11,14 @@ class AccesosRapidos: UICollectionViewCell {
 
     @IBOutlet weak var iconAR: UIImageView!
     @IBOutlet weak var labelAR: UILabel!
-    
     @IBOutlet weak var isNew: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        isNew.clipsToBounds = true
+        isNew.layer.cornerRadius = 5.0
     }
     func fetchImage(urlString: String) {
         //get data

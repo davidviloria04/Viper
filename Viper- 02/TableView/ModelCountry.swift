@@ -28,11 +28,15 @@ public struct MiniApps{
     public var name: String
     public var urlImage: String
     public var type: Int = 0
+    public var isNew: Bool = false
+    public var color: Int = 0
     
-    init(name: String, urlImage: String, type: Int) {
+    init(name: String, urlImage: String, type: Int, isNew: Bool, color: Int) {
         self.name  = name
         self.urlImage = urlImage
         self.type = type
+        self.isNew = isNew
+        self.color = color
     }
 }
 
@@ -40,10 +44,13 @@ public struct Shortcuts{
     public var name: String
     public var urlImage: String
     public var type: Int = 0
-    
-    init(name: String, urlImage: String, type: Int) {
+    public var isNew: Bool = false
+    public var color: Int = 0
+    init(name: String, urlImage: String, type: Int, isNew: Bool, color: Int) {
         self.name  = name
         self.urlImage = urlImage
         self.type = type
+        self.isNew = isNew
+        self.color = color
     }
 }

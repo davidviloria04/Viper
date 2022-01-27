@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,6 +42,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="XOi-J7-5kS">
+                        <rect key="frame" x="73" y="0.0" width="47" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -52,9 +61,11 @@
                 <constraint firstAttribute="trailing" secondItem="kRA-aE-6bZ" secondAttribute="trailing" id="Kkb-5z-QTd"/>
                 <constraint firstAttribute="trailing" secondItem="hCL-89-cLw" secondAttribute="trailing" constant="10" id="WrF-SR-3CR"/>
                 <constraint firstItem="kRA-aE-6bZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nUs-0M-iPw"/>
+                <constraint firstItem="hCL-89-cLw" firstAttribute="top" secondItem="XOi-J7-5kS" secondAttribute="bottom" constant="77" id="zmL-pB-xve"/>
             </constraints>
             <connections>
                 <outlet property="iconAR" destination="dr0-iD-swG" id="5no-7N-wqX"/>
+                <outlet property="isNew" destination="XOi-J7-5kS" id="eLL-he-xtE"/>
                 <outlet property="labelAR" destination="hCL-89-cLw" id="BRy-n0-eu3"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
@@ -62,6 +73,9 @@
     </objects>
     <resources>
         <image name="3" width="512" height="512"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

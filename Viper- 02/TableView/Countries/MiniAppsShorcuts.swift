@@ -92,6 +92,12 @@ extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSourc
         cell.fetchImage(urlString: listAr[indexPath.row].urlImage)
         cell.labelAR.lineBreakMode = .byWordWrapping
         cell.labelAR.numberOfLines = 0
+        if(!listAr[indexPath.row].isNew){
+            cell.isNew.isHidden = true
+        }
+        if(listAr[indexPath.row].color == 0) {
+            cell.isNew.backgroundColor = UIColor.red
+        }
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {

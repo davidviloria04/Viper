@@ -12,6 +12,8 @@ class AccesosRapidos: UICollectionViewCell {
     @IBOutlet weak var iconAR: UIImageView!
     @IBOutlet weak var labelAR: UILabel!
     
+    @IBOutlet weak var isNew: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -48,33 +48,33 @@ class TVInteractor {
     
     func getDatosCities() -> [MiniApps] {
         var listCity = [MiniApps]()
-        listCity.append(MiniApps(name: "Claro", urlImage: "0.png", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
-        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "0.png", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: true, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: true, color: 1))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
+        listCity.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
 
         return listCity
     }
     
     func getDatosAR() -> [Shortcuts]{
         var listAr = [Shortcuts]()
-        listAr.append(Shortcuts(name: "Musica", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Noticias", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "¿Que es Claro Pay ", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Telmex", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Telcel", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Cerca de mi", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Prepago", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Saldo", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1))
-        listAr.append(Shortcuts(name: "Promos", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Prestamo", urlImage: "0", type: 1))
-        listAr.append(Shortcuts(name: "Expedia", urlImage: "2", type: 1))
-        listAr.append(Shortcuts(name: "Pase", urlImage: "1", type: 1))
+        listAr.append(Shortcuts(name: "Musica", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Noticias", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "¿Que es Claro Pay ", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Telmex", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Telcel", urlImage: "0", type: 1, isNew: true, color: 1))
+        listAr.append(Shortcuts(name: "Cerca de mi", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Prepago", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Saldo", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Promos", urlImage: "0", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Prestamo", urlImage: "0", type: 1, isNew: true, color: 0))
+        listAr.append(Shortcuts(name: "Expedia", urlImage: "2", type: 1, isNew: false, color: 0))
+        listAr.append(Shortcuts(name: "Pase", urlImage: "1", type: 1, isNew: false, color: 0))
         
         return listAr
     }

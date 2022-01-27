@@ -94,6 +94,12 @@ extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
         cell.cityname.text = listCities[indexPath.row].name
         cell.icon.image = UIImage(named: listCities[indexPath.row].urlImage)
+        if(!listCities[indexPath.row].isNew){
+            cell.isNew.isHidden = true
+        }
+        if (listCities[indexPath.row].color == 0){
+            cell.isNew.backgroundColor = UIColor.red
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {

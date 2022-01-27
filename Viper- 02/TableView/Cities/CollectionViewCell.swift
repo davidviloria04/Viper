@@ -13,6 +13,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cityname: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var view: UIView!
+    @IBOutlet weak var isNew: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

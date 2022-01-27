@@ -1,16 +1,20 @@
 PODS:
   - AssistantKit (0.7.1)
+  - SkeletonView (1.29.2)
 
 DEPENDENCIES:
   - AssistantKit
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
     - AssistantKit
+    - SkeletonView
 
 SPEC CHECKSUMS:
   AssistantKit: 245d28aefcf3aeae240c8ecbe3c62714e3f1c6d4
+  SkeletonView: 915a80ecc2b6421ab7ac0f0212321c0cc1406472
 
-PODFILE CHECKSUM: b9be3580a66bf74742d7614ad85b1599ca9a77cb
+PODFILE CHECKSUM: 3afc1ed7a63913bf729d277a8dba8756a2782851
 
 COCOAPODS: 1.11.2

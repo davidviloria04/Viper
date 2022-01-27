@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class CollectionViewCell: UICollectionViewCell {
     
@@ -22,5 +23,32 @@ class CollectionViewCell: UICollectionViewCell {
         view.clipsToBounds = true
         isNew.layer.cornerRadius = 5.0
         isNew.clipsToBounds = true
+        
+        //Skeleton
+        setupSkeleton()
+        loadData()
+        
     }
+    
+    private func setupSkeleton(){
+        cityname.isSkeletonable = true
+        icon.isSkeletonable = true
+        isNew.isSkeletonable = true
+        self.isNew.isHiddenWhenSkeletonIsActive = true
+    }
+    
+    private func loadData(){
+        cityname.showAnimatedGradientSkeleton()
+        icon.showAnimatedGradientSkeleton()
+        isNew.showAnimatedGradientSkeleton()
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            self.cityname.hideSkeleton()
+            self.icon.hideSkeleton()
+            self.isNew.hideSkeleton()
+        }
+    }
+    
+    
 }

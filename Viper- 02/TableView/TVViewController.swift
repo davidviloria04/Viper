@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class TVViewController: UIViewController {
     
@@ -33,6 +34,7 @@ class TVViewController: UIViewController {
         
         //Skeleton
         
+        tableView.isSkeletonable = true
         
     }
     private func register(classType: AnyClass) {

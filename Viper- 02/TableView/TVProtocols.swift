@@ -36,5 +36,5 @@ protocol TVPresenterProtocol: AnyObject{
 
 protocol TVInteractorProtocol: AnyObject {
     func getDatos() ->[String]
-    func getCountries() ->[Apps]
+    func getApps() ->[Apps]
 }

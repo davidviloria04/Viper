@@ -19,6 +19,7 @@ class AccesosRapidos: UICollectionViewCell {
         
         isNew.clipsToBounds = true
         isNew.layer.cornerRadius = 5.0
+        labelAR.numberOfLines = 0
         setupSkeleton()
         loadData()
         
@@ -34,7 +35,7 @@ class AccesosRapidos: UICollectionViewCell {
     }
     
     private func loadData(){
-        labelAR.showAnimatedGradientSkeleton()
+        labelAR.showGradientSkeleton(usingGradient: .init(baseColor: .red), animated: true, delay: 0.5, transition: .crossDissolve(0.5))
         iconAR.showAnimatedGradientSkeleton()
         isNew.showAnimatedGradientSkeleton()
         

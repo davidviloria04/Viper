@@ -19,29 +19,20 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRA-aE-6bZ">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-iD-swG">
-                                <rect key="frame" x="0.0" y="0.0" width="120" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dr0-iD-swG" firstAttribute="leading" secondItem="kRA-aE-6bZ" secondAttribute="leading" id="DQL-iO-Xl8"/>
-                            <constraint firstAttribute="bottom" secondItem="dr0-iD-swG" secondAttribute="bottom" id="KsS-HD-YrM"/>
-                            <constraint firstItem="dr0-iD-swG" firstAttribute="top" secondItem="kRA-aE-6bZ" secondAttribute="top" id="TJo-bJ-uHX"/>
-                            <constraint firstAttribute="trailing" secondItem="dr0-iD-swG" secondAttribute="trailing" id="uwN-sB-LhP"/>
+                            <constraint firstItem="dr0-iD-swG" firstAttribute="top" secondItem="kRA-aE-6bZ" secondAttribute="top" id="DMK-iB-iBn"/>
+                            <constraint firstAttribute="bottom" secondItem="dr0-iD-swG" secondAttribute="bottom" id="ZhC-Li-ud7"/>
+                            <constraint firstItem="dr0-iD-swG" firstAttribute="leading" secondItem="kRA-aE-6bZ" secondAttribute="leading" id="m1L-gU-aBc"/>
+                            <constraint firstAttribute="trailing" secondItem="dr0-iD-swG" secondAttribute="trailing" id="miI-hq-jyM"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-89-cLw">
-                        <rect key="frame" x="10" y="95" width="100" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Roo-5i-6th"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="XOi-J7-5kS">
                         <rect key="frame" x="73" y="0.0" width="47" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -50,25 +41,33 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-89-cLw">
+                        <rect key="frame" x="5" y="91" width="110" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="mMr-EK-LUV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="hCL-89-cLw" firstAttribute="top" secondItem="kRA-aE-6bZ" secondAttribute="bottom" constant="5" id="3BX-Za-0am"/>
-                <constraint firstItem="kRA-aE-6bZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6KT-tI-ph1"/>
-                <constraint firstItem="hCL-89-cLw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="8gj-VI-Dgt"/>
-                <constraint firstAttribute="bottom" secondItem="hCL-89-cLw" secondAttribute="bottom" constant="5" id="Glq-Gs-7wO"/>
-                <constraint firstAttribute="trailing" secondItem="kRA-aE-6bZ" secondAttribute="trailing" id="Kkb-5z-QTd"/>
-                <constraint firstAttribute="trailing" secondItem="hCL-89-cLw" secondAttribute="trailing" constant="10" id="WrF-SR-3CR"/>
-                <constraint firstItem="kRA-aE-6bZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nUs-0M-iPw"/>
-                <constraint firstItem="hCL-89-cLw" firstAttribute="top" secondItem="XOi-J7-5kS" secondAttribute="bottom" constant="77" id="zmL-pB-xve"/>
+                <constraint firstItem="kRA-aE-6bZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2cG-ju-FFJ"/>
+                <constraint firstItem="hCL-89-cLw" firstAttribute="top" secondItem="kRA-aE-6bZ" secondAttribute="bottom" constant="2" id="61i-LT-8Dl"/>
+                <constraint firstAttribute="bottom" secondItem="hCL-89-cLw" secondAttribute="bottom" id="DkN-6i-bZN"/>
+                <constraint firstAttribute="trailing" secondItem="kRA-aE-6bZ" secondAttribute="trailing" id="Oeq-9Q-r0h"/>
+                <constraint firstItem="kRA-aE-6bZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dNe-3G-3v7"/>
+                <constraint firstItem="hCL-89-cLw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="fAK-2N-TN4"/>
+                <constraint firstAttribute="trailing" secondItem="hCL-89-cLw" secondAttribute="trailing" constant="5" id="uiR-wB-jvJ"/>
             </constraints>
             <connections>
                 <outlet property="iconAR" destination="dr0-iD-swG" id="5no-7N-wqX"/>
                 <outlet property="isNew" destination="XOi-J7-5kS" id="eLL-he-xtE"/>
                 <outlet property="labelAR" destination="hCL-89-cLw" id="BRy-n0-eu3"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+            <point key="canvasLocation" x="131.19999999999999" y="119.70443349753695"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -30,7 +30,7 @@ class BannerTableViewCell: UITableViewCell {
     }
     
     private func loadData(){
-        promoBanner.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .systemRed), animation: nil, transition: .crossDissolve(0.5))
+        promoBanner.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .systemRed), animation: nil, transition: .crossDissolve(0.25))
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.promoBanner.hideSkeleton()

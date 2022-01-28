@@ -38,7 +38,6 @@ class showMoreShorcuts: UITableViewCell {
         label.showAnimatedGradientSkeleton()
         buttonVerMas.showAnimatedGradientSkeleton()
         
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.buttonVerMas.hideSkeleton()
             self.label.hideSkeleton()

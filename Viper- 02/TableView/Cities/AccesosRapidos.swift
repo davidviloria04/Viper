@@ -19,7 +19,34 @@ class AccesosRapidos: UICollectionViewCell {
         
         isNew.clipsToBounds = true
         isNew.layer.cornerRadius = 5.0
+        setupSkeleton()
+        loadData()
+        
     }
+    
+    
+    
+    private func setupSkeleton(){
+        labelAR.isSkeletonable = true
+        iconAR.isSkeletonable = true
+        isNew.isSkeletonable = true
+        self.isNew.isHiddenWhenSkeletonIsActive = true
+    }
+    
+    private func loadData(){
+        labelAR.showAnimatedGradientSkeleton()
+        iconAR.showAnimatedGradientSkeleton()
+        isNew.showAnimatedGradientSkeleton()
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            self.labelAR.hideSkeleton()
+            self.iconAR.hideSkeleton()
+            self.isNew.hideSkeleton()
+        }
+    }
+    
+    
     func fetchImage(urlString: String) {
         //get data
         

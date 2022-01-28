@@ -20,6 +20,21 @@ class BannerTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        setupSkeleton()
+        loadData()
+    }
+    
+    private func setupSkeleton(){
+        promoBanner.isSkeletonable = true
+    }
+    
+    private func loadData(){
+        promoBanner.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .systemRed), animation: nil, transition: .crossDissolve(0.5))
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            self.promoBanner.hideSkeleton()
+        }
     }
     
 }

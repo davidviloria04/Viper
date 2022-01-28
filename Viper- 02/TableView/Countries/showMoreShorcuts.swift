@@ -18,10 +18,36 @@ class showMoreShorcuts: UITableViewCell {
         super.awakeFromNib()
         buttonVerMas.layer.cornerRadius = 0.2 * buttonVerMas.bounds.size.width
         buttonVerMas.clipsToBounds = true
+        
+        
+        setupSkeleton()
+        loadData()
     }
     
     @IBAction func buttonVerMas(_ sender: UIButton) {
         delegate?.showAlert()
     }
+    
+    
+    private func setupSkeleton(){
+        label.isSkeletonable = true
+        buttonVerMas.isSkeletonable = true
+    }
+    
+    private func loadData(){
+        label.showAnimatedGradientSkeleton()
+        buttonVerMas.showAnimatedGradientSkeleton()
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            self.buttonVerMas.hideSkeleton()
+            self.label.hideSkeleton()
+        }
+    }
+    
+    
+    
+    
+    
 }
 

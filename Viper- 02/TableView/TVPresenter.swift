@@ -13,8 +13,7 @@ class TVPresenter {
     weak var view: TVViewProtocol?
     var interactor: TVInteractorProtocol?
     var router: TVRouterProtocol?
-    
-    var countries : [Apps]?
+    var cellType : [CellType]?
     
     init(interactor: TVInteractorProtocol, router: TVRouterProtocol) {
         self.interactor = interactor
@@ -24,9 +23,9 @@ class TVPresenter {
 
 extension TVPresenter: TVPresenterProtocol {
     func viewDidLoad() {
-        self.countries = interactor?.getApps()
-        view?.ViewCountry(countries: self.countries ?? [])
-        view?.NumCountry(numCountry: self.countries?.count ?? 0)
+        self.cellType = interactor?.getCellType()
+        view?.ViewCountry(countries: self.cellType ?? [])
+        view?.NumCountry(numCountry: self.cellType?.count ?? 0)
         print(interactor?.getDatos())
     }
 }

@@ -32,11 +32,6 @@
                                     <action selector="CallViper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZb-lv-dP2"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szf-bd-EHa">
-                                <rect key="frame" x="85" y="630" width="244" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -48,9 +43,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vd9-S8-MZg"/>
-                    <connections>
-                        <outlet property="vistaBanner" destination="Szf-bd-EHa" id="JnN-PJ-PoC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

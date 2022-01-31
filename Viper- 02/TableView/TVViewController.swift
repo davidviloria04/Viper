@@ -13,7 +13,7 @@ class TVViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: TVPresenterProtocol?
     var numRow: Int = 0
-    var listCountry = [Apps]()
+    var listCountry = [CellType]()
     let screenSize: CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
@@ -61,7 +61,7 @@ extension TVViewController: TVViewProtocol{
         print(numCountry)
     }
     
-    func ViewCountry(countries: [Apps]) {
+    func ViewCountry(countries: [CellType]) {
         print(countries)
         self.listCountry = countries
     }

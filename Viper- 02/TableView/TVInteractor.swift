@@ -8,8 +8,9 @@
 import Foundation
 
 extension TVInteractor: TVInteractorProtocol {
-    func getApps() -> [Apps] {
-        return getDatosApps()
+
+    func getCellTypes() -> [CellType] {
+        return getCellType()
     }
     func getDatos() -> [String] {
         return getDatosOutPut()
@@ -22,31 +23,31 @@ class TVInteractor {
         let myCountries = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
        return myCountries
     }
+//
+//    func getDatosString() -> String {
+//       return "Me llamo Val"
+//    }
+//
+//    func getDatosCity() -> [String] {
+//        let myCities = ["Madrid", "Ciudad de mexico", "Lima", "Bogota", "Buenos aires", "Washingtong", "Paris", "Roma"]
+//        return myCities
+//    }
     
-    func getDatosString() -> String {
-       return "Me llamo Val"
-    }
     
-    func getDatosCity() -> [String] {
-        let myCities = ["Madrid", "Ciudad de mexico", "Lima", "Bogota", "Buenos aires", "Washingtong", "Paris", "Roma"]
-        return myCities
-    }
-    
-    
-    func getDatosApps() -> [Apps] {
-        var listCountry = [Apps]()
+    func getCellType() -> [CellType] {
+        var cellType = [CellType]()
         
-        listCountry.append(Apps(type: 3, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(type: 4, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(type: 1, miniApps: getDatosCities(), shortcuts: []))
-        listCountry.append(Apps(type: 5, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(type: 4, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(type: 2, miniApps: getDatosCities(), shortcuts: getDatosAR()))
+        cellType.append(CellType(type: 3, miniApps: [], shortcuts: []))
+        cellType.append(CellType(type: 4, miniApps: [], shortcuts: []))
+        cellType.append(CellType(type: 1, miniApps: getDatosMiniApps(), shortcuts: []))
+        cellType.append(CellType(type: 5, miniApps: [], shortcuts: []))
+        cellType.append(CellType(type: 4, miniApps: [], shortcuts: []))
+        cellType.append(CellType(type: 2, miniApps: getDatosMiniApps(), shortcuts: getDatosAR()))
         
-       return listCountry
+       return cellType
     }
     
-    func getDatosCities() -> [MiniApps] {
+    func getDatosMiniApps() -> [MiniApps] {
         var listMiniApps = [MiniApps]()
         listMiniApps.append(MiniApps(name: "Claro", urlImage: "0.png", type: 1, isNew: false, color: 0))
         listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1, isNew: false, color: 0))

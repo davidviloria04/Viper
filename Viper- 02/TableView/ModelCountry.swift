@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Apps{
+public struct CellType{
     public var type: Int = 0
     public var miniApps: [MiniApps]
     public var shortcuts: [Shortcuts]

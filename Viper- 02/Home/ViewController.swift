@@ -18,8 +18,6 @@ class ViewController: UIViewController {
         //Comunico a mi vista con el presenter
         presenter?.viewDidLoad()
         
-        let banner = Banner()
-        vistaBanner.addSubview(banner)
     }
 
     @IBAction func CallViper(_ sender: Any) {

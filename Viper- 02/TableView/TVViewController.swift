@@ -120,6 +120,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
         }
         if (listCountry[indexPath.row].type == 1) {
+            
             if (screenSize.height > 736 && screenSize.height <= 896){
                 return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
             }
@@ -130,13 +131,19 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
 
         }
         if (listCountry[indexPath.row].type == 2) {
-            if (screenSize.height > 736 && screenSize.height <= 896){
-                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            if (screenSize.height >= 667 && screenSize.height <= 736){
+                return CGFloat((Int(screenSize.maxY)/4) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            }
+            if (screenSize.height >= 812 && screenSize.height < 896){
+                return CGFloat((Int(screenSize.maxY)/5) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+            }
+            if (screenSize.height >= 896 && screenSize.height < 926){
+                return CGFloat((Int(screenSize.maxY)/5) + ((listCountry[indexPath.row].miniApps.count/4) * 120))
             }
             if (screenSize.height >= 926){
-                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
+                return CGFloat((Int(screenSize.maxY)/4) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
             }
-            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 110))
 
         }
         else {

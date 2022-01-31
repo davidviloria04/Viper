@@ -66,6 +66,7 @@
                 <outlet property="iconAR" destination="dr0-iD-swG" id="5no-7N-wqX"/>
                 <outlet property="isNew" destination="XOi-J7-5kS" id="eLL-he-xtE"/>
                 <outlet property="labelAR" destination="hCL-89-cLw" id="BRy-n0-eu3"/>
+                <outlet property="view" destination="kRA-aE-6bZ" id="ARn-x3-bWs"/>
             </connections>
             <point key="canvasLocation" x="131.19999999999999" y="119.70443349753695"/>
         </collectionViewCell>

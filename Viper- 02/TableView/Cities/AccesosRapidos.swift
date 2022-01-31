@@ -12,14 +12,18 @@ class AccesosRapidos: UICollectionViewCell {
     @IBOutlet weak var iconAR: UIImageView!
     @IBOutlet weak var labelAR: UILabel!
     @IBOutlet weak var isNew: UILabel!
+    @IBOutlet weak var view: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         isNew.clipsToBounds = true
-        isNew.layer.cornerRadius = 5.0
+        isNew.layer.cornerRadius = 8
         labelAR.numberOfLines = 0
+        labelAR.linesCornerRadius = 8
+        iconAR.layer.cornerRadius = 8
+        view.layer.cornerRadius = 8
         setupSkeleton()
         loadData()
         
@@ -32,6 +36,8 @@ class AccesosRapidos: UICollectionViewCell {
         iconAR.isSkeletonable = true
         isNew.isSkeletonable = true
         self.isNew.isHiddenWhenSkeletonIsActive = true
+        
+    
     }
     
     private func loadData(){

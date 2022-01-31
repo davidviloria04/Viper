@@ -36,12 +36,12 @@ class TVInteractor {
     func getDatosApps() -> [Apps] {
         var listCountry = [Apps]()
         
-        listCountry.append(Apps(name:"" , urlImage: "0.png", type: 3, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(name:"" , urlImage: "0.png", type: 4, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(name:"", urlImage: "", type: 1, miniApps: getDatosCities(), shortcuts: []))
-        listCountry.append(Apps(name:"", urlImage: "", type: 5, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(name:"", urlImage: "" , type: 4, miniApps: [], shortcuts: []))
-        listCountry.append(Apps(name:"", urlImage: "", type: 2, miniApps: getDatosCities(), shortcuts: getDatosAR()))
+        listCountry.append(Apps(type: 3, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(type: 4, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(type: 1, miniApps: getDatosCities(), shortcuts: []))
+        listCountry.append(Apps(type: 5, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(type: 4, miniApps: [], shortcuts: []))
+        listCountry.append(Apps(type: 2, miniApps: getDatosCities(), shortcuts: getDatosAR()))
         
        return listCountry
     }

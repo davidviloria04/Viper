@@ -7,17 +7,12 @@
 
 import Foundation
 
-public struct Apps {
-
-    public var name: String
-    public var urlImage: String
+public struct Apps{
     public var type: Int = 0
     public var miniApps: [MiniApps]
     public var shortcuts: [Shortcuts]
     
-    init(name: String, urlImage: String, type: Int, miniApps: [MiniApps], shortcuts: [Shortcuts]){
-        self.name = name
-        self.urlImage = urlImage
+    init(type: Int, miniApps: [MiniApps], shortcuts: [Shortcuts]){
         self.type = type
         self.miniApps = miniApps
         self.shortcuts = shortcuts
@@ -25,6 +20,7 @@ public struct Apps {
 }
 
 public struct MiniApps{
+    
     public var name: String
     public var urlImage: String
     public var type: Int = 0
@@ -41,6 +37,7 @@ public struct MiniApps{
 }
 
 public struct Shortcuts{
+    
     public var name: String
     public var urlImage: String
     public var type: Int = 0
@@ -54,3 +51,9 @@ public struct Shortcuts{
         self.color = color
     }
 }
+
+
+//Consumir servicio de Home
+//Cuando se esta pintando cada opcion pintar cada numero
+//Banner
+//Listo

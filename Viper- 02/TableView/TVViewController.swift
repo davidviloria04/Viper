@@ -66,7 +66,6 @@ extension TVViewController: TVViewProtocol{
         self.listCells = countries
     }
     // TODO: implement view output methods
-    
 }
 
 extension TVViewController: UITableViewDataSource, UITableViewDelegate{
@@ -149,10 +148,8 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         }
         else {
             return CGFloat(100 + ((listCells[indexPath.row].miniApps.count/4) * 90))
-
         }
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         alert()
         debugPrint(screenSize.height)

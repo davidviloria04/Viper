@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AssistantKit
 
 class MiniAppsShorcuts: UITableViewCell{
     
@@ -16,18 +15,13 @@ class MiniAppsShorcuts: UITableViewCell{
     private var indexPath: IndexPath?
     var delegate : TVViewController?
     var listAr = [Shortcuts]()
-    let family = Device.screen.family
     let screenSize: CGRect = UIScreen.main.bounds
-//    var sizeh = 0
-//    var sizew = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
         citiesCV.dataSource = self
         citiesCV.delegate = self
         register(classType: AccesosRapidos.self)
-//        screenSizeH()
-//        screenSizeW()
         self.citiesCV.collectionViewLayout = flowLayout2
         citiesCV.reloadData()
 
@@ -44,7 +38,6 @@ class MiniAppsShorcuts: UITableViewCell{
             flowLayout.itemSize = CGSize(width: screenSize.width / 5, height: screenSize.height / 8 )
         }else {flowLayout.itemSize = CGSize(width: screenSize.width / 5, height: screenSize.height / 7)}
         
-        //flowLayout.itemSize = CGSize(width: sizew, height: sizeh)
         flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 15, bottom: 5, right: 15)
         flowLayout.minimumInteritemSpacing = 10
         // edit properties here
@@ -64,7 +57,6 @@ extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.listAr.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AccesosRapidos", for: indexPath) as? AccesosRapidos else {return UICollectionViewCell()}
             cell.labelAR.text = listAr[indexPath.row].name
@@ -77,7 +69,6 @@ extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSourc
         if(listAr[indexPath.row].color == 0) {
             cell.isNew.backgroundColor = UIColor.red
         }
-       
             return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {

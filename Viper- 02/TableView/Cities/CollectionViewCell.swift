@@ -42,7 +42,6 @@ class CollectionViewCell: UICollectionViewCell {
         icon.showAnimatedGradientSkeleton()
         isNew.showAnimatedGradientSkeleton()
         
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.cityname.hideSkeleton()
             self.icon.hideSkeleton()

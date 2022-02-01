@@ -65,8 +65,6 @@ public struct Banners{
         self.type = type
     }
 }
-
-
 //Consumir servicio de Home
 //Cuando se esta pintando cada opcion pintar cada numero
 //Banner

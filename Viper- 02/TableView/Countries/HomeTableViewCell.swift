@@ -26,8 +26,6 @@ class HomeTableViewCell: UITableViewCell{
         citiesCV.dataSource = self
         citiesCV.delegate = self
         register(classType: CollectionViewCell.self)
-        //        screenSizeH()
-        //        screenSizeW()
         self.citiesCV.collectionViewLayout = flowLayout
         citiesCV.reloadData()
         
@@ -37,7 +35,6 @@ class HomeTableViewCell: UITableViewCell{
         let flowLayout = UICollectionViewFlowLayout()
         // edit properties here
         flowLayout.itemSize = CGSize(width: screenSize.width / 4, height: screenSize.height / 10)
-        //flowLayout.itemSize = CGSize(width: sizew , height: sizeh)
         flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
         flowLayout.minimumInteritemSpacing = 4
         // edit properties hered
@@ -49,36 +46,6 @@ class HomeTableViewCell: UITableViewCell{
         let id = String(describing: classType.self)
         citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
     }
-    
-    //    public func screenSizeH(){
-    //        if (family == .old) {
-    //            return sizeh = 50
-    //        }
-    //        if (family == .medium) {
-    //            return sizeh = 100
-    //        }
-    //        if (family == .small) {
-    //            return sizeh = 70
-    //        }
-    //        if (family == .big) {
-    //            return sizeh = 100
-    //        }
-    //    }
-    
-    //    public func screenSizeW(){
-    //        if (family == .old) {
-    //            return sizew = 60
-    //        }
-    //        if (family == .medium) {
-    //            return sizew = 100
-    //        }
-    //        if (family == .small) {
-    //            return sizew = 70
-    //        }
-    //        if (family == .big) {
-    //            return sizew = 100
-    //        }
-    //    }
     
 }
 

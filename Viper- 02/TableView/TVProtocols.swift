@@ -16,8 +16,6 @@ protocol TVViewProtocol: AnyObject {
     func NumCountry(numCountry :Int)
     
 }
-
-
 protocol TVRouterProtocol: AnyObject{
     //Presenter -> Router
     static func build() -> UIViewController
@@ -36,4 +34,7 @@ protocol TVPresenterProtocol: AnyObject{
 protocol TVInteractorProtocol: AnyObject {
     func getDatos() ->[String]
     func getCellType() ->[CellType]
+    func getMiniAppsOutPut() -> [MiniApps]
+    func getShorcutsOutPut() -> [Shortcuts]
+    func getBannerOutPut() -> Banners
 }

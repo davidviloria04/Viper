@@ -8,8 +8,21 @@
 import Foundation
 
 extension TVInteractor: TVInteractorProtocol {
+    func getMiniAppsOutPut() -> [MiniApps] {
+        return getDatosMiniApps()
 
-    func getCellTypes() -> [CellType] {
+    }
+    
+    func getShorcutsOutPut() -> [Shortcuts] {
+        return getDatosAR()
+    }
+    
+    func getBannerOutPut() -> Banners {
+        return getDatosBanners()
+    }
+    
+
+    func getCellTypeOutPut() -> [CellType] {
         return getCellType()
     }
     func getDatos() -> [String] {
@@ -23,16 +36,6 @@ class TVInteractor {
         let myCountries = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
        return myCountries
     }
-//
-//    func getDatosString() -> String {
-//       return "Me llamo Val"
-//    }
-//
-//    func getDatosCity() -> [String] {
-//        let myCities = ["Madrid", "Ciudad de mexico", "Lima", "Bogota", "Buenos aires", "Washingtong", "Paris", "Roma"]
-//        return myCities
-//    }
-    
     
     func getCellType() -> [CellType] {
         var cellType = [CellType]()

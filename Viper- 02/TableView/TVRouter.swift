@@ -25,12 +25,7 @@ class TVRouter{
         presenter.router = router
         presenter.view = view
         presenter.interactor = interactor
-
-
         return view
-        
-       
-        
     }
 }
 

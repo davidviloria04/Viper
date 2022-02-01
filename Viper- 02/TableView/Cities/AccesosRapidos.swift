@@ -29,22 +29,17 @@ class AccesosRapidos: UICollectionViewCell {
         
     }
     
-    
-    
     private func setupSkeleton(){
         labelAR.isSkeletonable = true
         iconAR.isSkeletonable = true
         isNew.isSkeletonable = true
         self.isNew.isHiddenWhenSkeletonIsActive = true
-        
-    
     }
     
     private func loadData(){
         labelAR.showGradientSkeleton(usingGradient: .init(baseColor: .red), animated: true, delay: 0.5, transition: .crossDissolve(0.5))
         iconAR.showAnimatedGradientSkeleton()
         isNew.showAnimatedGradientSkeleton()
-        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.labelAR.hideSkeleton()
@@ -53,11 +48,7 @@ class AccesosRapidos: UICollectionViewCell {
         }
     }
     
-    
     func fetchImage(urlString: String) {
-        //get data
-        
-        //convert the data to image
         //set image to imageView
         guard let url = URL(string: urlString) else {
             return

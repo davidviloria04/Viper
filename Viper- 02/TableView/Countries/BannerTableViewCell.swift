@@ -12,7 +12,8 @@ class BannerTableViewCell: UITableViewCell {
     @IBOutlet weak var promoBanner: UIImageView!
     var delegate: TVViewController?
     override func awakeFromNib() {
-        super.awakeFromNib()        // Initialization code
+        super.awakeFromNib()
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -24,10 +25,6 @@ class BannerTableViewCell: UITableViewCell {
         loadData()
     }
     func fetchImage(urlString: String) {
-        //get data
-        
-        //convert the data to image
-        //set image to imageView
         guard let url = URL(string: urlString) else {
             return
         }

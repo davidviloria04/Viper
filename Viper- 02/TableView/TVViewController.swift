@@ -13,7 +13,7 @@ class TVViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: TVPresenterProtocol?
     var numRow: Int = 0
-    var listCountry = [CellType]()
+    var listCells = [CellType]()
     let screenSize: CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
@@ -63,7 +63,7 @@ extension TVViewController: TVViewProtocol{
     
     func ViewCountry(countries: [CellType]) {
         print(countries)
-        self.listCountry = countries
+        self.listCells = countries
     }
     // TODO: implement view output methods
     
@@ -71,83 +71,84 @@ extension TVViewController: TVViewProtocol{
 
 extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.listCountry.count
+        self.listCells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (listCountry[indexPath.row].type == 1) {
+        if (listCells[indexPath.row].type == 1) {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell") as? HomeTableViewCell else { return UITableViewCell() }
-            cell.listCities = listCountry[indexPath.row].miniApps
+            cell.listCities = listCells[indexPath.row].miniApps
             cell.delegate = self
             return cell
             
-        } else if (listCountry[indexPath.row].type == 2) {
+        } else if (listCells[indexPath.row].type == 2) {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "MiniAppsShorcuts") as? MiniAppsShorcuts else { return UITableViewCell() }
-            cell.listAr = listCountry[indexPath.row].shortcuts
+            cell.listAr = listCells[indexPath.row].shortcuts
             cell.delegate = self
             return cell
             
-        }else if (listCountry[indexPath.row].type == 3){
+        }else if (listCells[indexPath.row].type == 3){
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Greetings") as? Greetings else { return UITableViewCell()
             }
             return cell
-        } else if (listCountry[indexPath.row].type == 4){
+        } else if (listCells[indexPath.row].type == 4){
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "showMoreShorcuts") as? showMoreShorcuts else { return UITableViewCell()}
             cell.delegate = self
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()
             }
+            cell.fetchImage(urlString: listCells[indexPath.row].banners.urlImage) 
             return cell
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if(listCountry[indexPath.row].type == 4){
+        if(listCells[indexPath.row].type == 4){
             if(screenSize.height >= 667 && screenSize.height <= 736)
-            {return CGFloat((Int(screenSize.maxY)/6) + ((listCountry[indexPath.row].miniApps.count/4) * 100))}
+            {return CGFloat((Int(screenSize.maxY)/6) + ((listCells[indexPath.row].miniApps.count/4) * 100))}
             if(screenSize.height > 736 && screenSize.height <= 812)
-            {return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 50))}
+            {return CGFloat((Int(screenSize.maxY)/8) + ((listCells[indexPath.row].miniApps.count/4) * 50))}
             
-            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+            return CGFloat((Int(screenSize.maxY)/8) + ((listCells[indexPath.row].miniApps.count/4) * 90))
         }
-        if(listCountry[indexPath.row].type == 3){
+        if(listCells[indexPath.row].type == 3){
             if(screenSize.height >= 667 && screenSize.height <= 736)
-            {return CGFloat((Int(screenSize.maxY)/7) + ((listCountry[indexPath.row].miniApps.count/4) * 100))}
+            {return CGFloat((Int(screenSize.maxY)/7) + ((listCells[indexPath.row].miniApps.count/4) * 100))}
             if(screenSize.height > 736 && screenSize.height <= 896)
-            {return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 90))}
+            {return CGFloat((Int(screenSize.maxY)/10) + ((listCells[indexPath.row].miniApps.count/4) * 90))}
             if(screenSize.height >= 926)
-            {return CGFloat((Int(screenSize.maxY)/11) + ((listCountry[indexPath.row].miniApps.count/4) * 90))}
-            return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+            {return CGFloat((Int(screenSize.maxY)/11) + ((listCells[indexPath.row].miniApps.count/4) * 90))}
+            return CGFloat((Int(screenSize.maxY)/8) + ((listCells[indexPath.row].miniApps.count/4) * 90))
         }
-        if (listCountry[indexPath.row].type == 1) {
+        if (listCells[indexPath.row].type == 1) {
             
             if (screenSize.height > 736 && screenSize.height <= 896){
-                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCells[indexPath.row].miniApps.count/4) * 100))
             }
             if (screenSize.height >= 926){
-                return CGFloat((Int(screenSize.maxY)/8) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
+                return CGFloat((Int(screenSize.maxY)/8) + ((listCells[indexPath.row].miniApps.count/4) * 105))
             }
-            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCells[indexPath.row].miniApps.count/4) * 100))
 
         }
-        if (listCountry[indexPath.row].type == 2) {
+        if (listCells[indexPath.row].type == 2) {
             if (screenSize.height >= 667 && screenSize.height <= 736){
-                return CGFloat((Int(screenSize.maxY)/4) + ((listCountry[indexPath.row].miniApps.count/4) * 100))
+                return CGFloat((Int(screenSize.maxY)/4) + ((listCells[indexPath.row].miniApps.count/4) * 100))
             }
             if (screenSize.height >= 812 && screenSize.height < 896){
-                return CGFloat((Int(screenSize.maxY)/5) + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+                return CGFloat((Int(screenSize.maxY)/5) + ((listCells[indexPath.row].miniApps.count/4) * 90))
             }
             if (screenSize.height >= 896 && screenSize.height < 926){
-                return CGFloat((Int(screenSize.maxY)/5) + ((listCountry[indexPath.row].miniApps.count/4) * 120))
+                return CGFloat((Int(screenSize.maxY)/5) + ((listCells[indexPath.row].miniApps.count/4) * 120))
             }
             if (screenSize.height >= 926){
-                return CGFloat((Int(screenSize.maxY)/4) + ((listCountry[indexPath.row].miniApps.count/4) * 105))
+                return CGFloat((Int(screenSize.maxY)/4) + ((listCells[indexPath.row].miniApps.count/4) * 105))
             }
-            return CGFloat((Int(screenSize.maxY)/10) + ((listCountry[indexPath.row].miniApps.count/4) * 110))
+            return CGFloat((Int(screenSize.maxY)/10) + ((listCells[indexPath.row].miniApps.count/4) * 110))
 
         }
         else {
-            return CGFloat(100 + ((listCountry[indexPath.row].miniApps.count/4) * 90))
+            return CGFloat(100 + ((listCells[indexPath.row].miniApps.count/4) * 90))
 
         }
     }

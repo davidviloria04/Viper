@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AssistantKit
 
 class HomeTableViewCell: UITableViewCell{
     
@@ -19,9 +18,7 @@ class HomeTableViewCell: UITableViewCell{
     private var indexPath: IndexPath?
     var delegate : TVViewController?
     var listCities = [MiniApps]()
-    let family = Device.screen.family
-    //    var sizeh = 0
-    //    var sizew = 0
+    
     let screenSize: CGRect = UIScreen.main.bounds
     
     override func awakeFromNib() {
@@ -104,7 +101,6 @@ extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
         delegate?.alert()
-        debugPrint(family)
     }
     
 }

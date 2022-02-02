@@ -14,8 +14,6 @@
 		0A8AD73B277523D700255501 /* TVRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD736277523D700255501 /* TVRouter.swift */; };
 		0A8AD73D27753A7700255501 /* ModelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD73C27753A7700255501 /* ModelCountry.swift */; };
 		14542D85365D10E0C0E117A5 /* Pods_Viper__02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBC7191DC6B2A6164809BAC /* Pods_Viper__02.framework */; };
-		3F1BA8252783785600171E6C /* Greetings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BA8242783785600171E6C /* Greetings.xib */; };
-		3F1BA827278378AB00171E6C /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BA826278378AB00171E6C /* Greetings.swift */; };
 		3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FEC912799EB75008B9AAD /* AccesosRapidos.swift */; };
 		3F2FEC942799EB75008B9AAD /* AccesosRapidos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FEC922799EB75008B9AAD /* AccesosRapidos.xib */; };
 		3F2FEC97279A01A1008B9AAD /* MiniAppsShorcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FEC95279A01A1008B9AAD /* MiniAppsShorcuts.swift */; };
@@ -44,6 +42,8 @@
 		3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63305277A596A002D81FD /* CVInteractor.swift */; };
 		3FA6330D277A596A002D81FD /* CVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63306277A596A002D81FD /* CVView.swift */; };
 		3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63308277A596A002D81FD /* CVWireFrame.swift */; };
+		3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */; };
+		3FEC2A0B27AAE14100D4106A /* GreetingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */; };
 		FB5F41EF279B2AC0000054F9 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */; };
 		FB5F41F0279B2AC0000054F9 /* BannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5F41EE279B2AC0000054F9 /* BannerTableViewCell.xib */; };
 		FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB87D7F92784EDD2006056BE /* cityStyle2.xib */; };
@@ -60,8 +60,6 @@
 		0A8AD736277523D700255501 /* TVRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVRouter.swift; sourceTree = "<group>"; };
 		0A8AD73C27753A7700255501 /* ModelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCountry.swift; sourceTree = "<group>"; };
 		35F4E4F3B3349284471AD21F /* Pods-Viper- 02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper- 02.debug.xcconfig"; path = "Target Support Files/Pods-Viper- 02/Pods-Viper- 02.debug.xcconfig"; sourceTree = "<group>"; };
-		3F1BA8242783785600171E6C /* Greetings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Greetings.xib; sourceTree = "<group>"; };
-		3F1BA826278378AB00171E6C /* Greetings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 		3F2FEC912799EB75008B9AAD /* AccesosRapidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesosRapidos.swift; sourceTree = "<group>"; };
 		3F2FEC922799EB75008B9AAD /* AccesosRapidos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccesosRapidos.xib; sourceTree = "<group>"; };
 		3F2FEC95279A01A1008B9AAD /* MiniAppsShorcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppsShorcuts.swift; sourceTree = "<group>"; };
@@ -92,6 +90,8 @@
 		3FA63305277A596A002D81FD /* CVInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVInteractor.swift; sourceTree = "<group>"; };
 		3FA63306277A596A002D81FD /* CVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVView.swift; sourceTree = "<group>"; };
 		3FA63308277A596A002D81FD /* CVWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWireFrame.swift; sourceTree = "<group>"; };
+		3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsTableViewCell.swift; sourceTree = "<group>"; };
+		3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsTableViewCell.xib; sourceTree = "<group>"; };
 		9DFEFE96E171B74642A16A55 /* Pods-Viper- 02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper- 02.release.xcconfig"; path = "Target Support Files/Pods-Viper- 02/Pods-Viper- 02.release.xcconfig"; sourceTree = "<group>"; };
 		CFBC7191DC6B2A6164809BAC /* Pods_Viper__02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper__02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
@@ -212,12 +212,12 @@
 				3F80F072277BCADC00C8C787 /* HomeTableViewCell.xib */,
 				3F88592A277CEA930015C98F /* showMoreShorcuts.swift */,
 				3F88592E277CEAD70015C98F /* showMoreShorcuts.xib */,
-				3F1BA826278378AB00171E6C /* Greetings.swift */,
-				3F1BA8242783785600171E6C /* Greetings.xib */,
 				3F2FEC95279A01A1008B9AAD /* MiniAppsShorcuts.swift */,
 				3F2FEC96279A01A1008B9AAD /* MiniAppsShorcuts.xib */,
 				FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */,
 				FB5F41EE279B2AC0000054F9 /* BannerTableViewCell.xib */,
+				3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */,
+				3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -311,11 +311,11 @@
 				3F40A797276BD89900D147A3 /* Assets.xcassets in Resources */,
 				3F88592F277CEAD70015C98F /* showMoreShorcuts.xib in Resources */,
 				3F80F074277BCADC00C8C787 /* HomeTableViewCell.xib in Resources */,
+				3FEC2A0B27AAE14100D4106A /* GreetingsTableViewCell.xib in Resources */,
 				3F40A795276BD89800D147A3 /* Main.storyboard in Resources */,
 				FB87D800278640BD006056BE /* CollectionViewCell.xib in Resources */,
 				FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */,
 				3F2FEC98279A01A1008B9AAD /* MiniAppsShorcuts.xib in Resources */,
-				3F1BA8252783785600171E6C /* Greetings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +371,6 @@
 				FB5F41EF279B2AC0000054F9 /* BannerTableViewCell.swift in Sources */,
 				0A8AD73B277523D700255501 /* TVRouter.swift in Sources */,
 				0A8AD73A277523D700255501 /* TVPresenter.swift in Sources */,
-				3F1BA827278378AB00171E6C /* Greetings.swift in Sources */,
 				3F40A792276BD89800D147A3 /* ViewController.swift in Sources */,
 				0A8AD738277523D700255501 /* TVInteractor.swift in Sources */,
 				3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */,
@@ -388,6 +387,7 @@
 				3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */,
 				3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */,
 				3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */,
+				3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */,
 				3F80F06C277BBEC000C8C787 /* XIB.swift in Sources */,
 				3F80F073277BCADC00C8C787 /* HomeTableViewCell.swift in Sources */,
 				3F40A7A5276BD8CE00D147A3 /* HomeInteractor.swift in Sources */,

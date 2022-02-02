@@ -30,6 +30,7 @@ class TVViewController: UIViewController {
         register(classType: showMoreShorcuts.self)
         register(classType: MiniAppsShorcuts.self)
         register(classType: BannerTableViewCell.self)
+        register(classType: GreetingsTableViewCell.self)
         tableView.reloadData()
         
         //Skeleton
@@ -87,7 +88,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
             
         }else if (listCells[indexPath.row].type == 3){
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "Greetings") as? Greetings else { return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "GreetingsTableViewCell") as? GreetingsTableViewCell else { return UITableViewCell()
             }
             return cell
         } else if (listCells[indexPath.row].type == 4){

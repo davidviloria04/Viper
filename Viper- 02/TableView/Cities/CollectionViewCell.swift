@@ -32,7 +32,9 @@ class CollectionViewCell: UICollectionViewCell {
     
     private func setupSkeleton(){
         cityname.isSkeletonable = true
+        cityname.linesCornerRadius =  7
         icon.isSkeletonable = true
+        icon.layer.cornerRadius = 7
         isNew.isSkeletonable = true
         self.isNew.isHiddenWhenSkeletonIsActive = true
     }

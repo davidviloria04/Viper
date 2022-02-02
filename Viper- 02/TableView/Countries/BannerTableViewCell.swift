@@ -44,6 +44,7 @@ class BannerTableViewCell: UITableViewCell {
     
     private func setupSkeleton(){
         promoBanner.isSkeletonable = true
+        promoBanner.layer.cornerRadius = 10
     }
     
     private func loadData(){

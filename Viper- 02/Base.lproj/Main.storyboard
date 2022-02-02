@@ -43,6 +43,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vd9-S8-MZg"/>
+                    <connections>
+                        <outlet property="greetings" destination="CPw-RQ-2AG" id="gS1-Hs-Y9c"/>
+                        <outlet property="launchViper" destination="PlO-Km-QPg" id="nHn-4a-77j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

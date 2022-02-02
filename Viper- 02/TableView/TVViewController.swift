@@ -26,7 +26,6 @@ class TVViewController: UIViewController {
         tableView.delegate = self
         
         register(classType: HomeTableViewCell.self)
-        register(classType: Greetings.self)
         register(classType: showMoreShorcuts.self)
         register(classType: MiniAppsShorcuts.self)
         register(classType: BannerTableViewCell.self)

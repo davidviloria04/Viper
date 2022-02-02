@@ -19,7 +19,8 @@ class GreetingsTableViewCell: UITableViewCell {
     @IBOutlet weak var labelMontoDelSaldo: UILabel!
     @IBOutlet weak var labelSaldo: UILabel!
     
-
+    @IBOutlet weak var labelHola: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,11 +40,16 @@ class GreetingsTableViewCell: UITableViewCell {
     
     
     private func setupSkeleton(){
-        self.iconAgregarDinero.isSkeletonable = true
-        self.labelAgregarDinero.isSkeletonable = true
-        self.labelSaldo.isSkeletonable = true
-        self.labelMontoDelSaldo.isSkeletonable = true
-        
+        iconAgregarDinero.isSkeletonable = true
+        iconAgregarDinero.layer.cornerRadius = 8.0
+        labelAgregarDinero.isSkeletonable = true
+        labelAgregarDinero.linesCornerRadius = 7
+        labelSaldo.isSkeletonable = true
+        labelSaldo.linesCornerRadius = 7
+        labelMontoDelSaldo.isSkeletonable = true
+        labelMontoDelSaldo.linesCornerRadius = 7
+        labelHola.isSkeletonable = true
+        labelHola.linesCornerRadius = 7
     }
     
     private func launchSkeleton(){
@@ -51,12 +57,14 @@ class GreetingsTableViewCell: UITableViewCell {
         self.labelAgregarDinero.showAnimatedGradientSkeleton()
         self.labelSaldo.showAnimatedGradientSkeleton()
         self.labelMontoDelSaldo.showAnimatedGradientSkeleton()
+        self.labelHola.showAnimatedGradientSkeleton()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.iconAgregarDinero.hideSkeleton()
             self.labelAgregarDinero.hideSkeleton()
             self.labelSaldo.hideSkeleton()
             self.labelMontoDelSaldo.hideSkeleton()
+            self.labelHola.hideSkeleton()
         }
     }
     

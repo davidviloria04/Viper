@@ -31,11 +31,12 @@ class showMoreShorcuts: UITableViewCell {
     
     private func setupSkeleton(){
         label.isSkeletonable = true
+        label.linesCornerRadius = 7
         buttonVerMas.isSkeletonable = true
     }
     
     private func loadData(){
-        label.showAnimatedGradientSkeleton()
+        label.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .white), transition: .crossDissolve(0.7))
         buttonVerMas.showAnimatedGradientSkeleton()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){

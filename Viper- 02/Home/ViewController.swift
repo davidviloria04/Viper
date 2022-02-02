@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import SkeletonView
 
 class ViewController: UIViewController {
     
     var presenter: HomePresenterProtocol?
-
-    @IBOutlet weak var vistaBanner: UIView!
+    
+    @IBOutlet weak var launchViper: UIButton!
+    @IBOutlet weak var greetings: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

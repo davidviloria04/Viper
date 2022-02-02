@@ -37,7 +37,7 @@ class AccesosRapidos: UICollectionViewCell {
     }
     
     private func loadData(){
-        labelAR.showGradientSkeleton(usingGradient: .init(baseColor: .red), animated: true, delay: 0.5, transition: .crossDissolve(0.5))
+        labelAR.showGradientSkeleton(usingGradient: .init(baseColor: .white), animated: true, delay: 0.5, transition: .crossDissolve(0.5))
         iconAR.showAnimatedGradientSkeleton()
         isNew.showAnimatedGradientSkeleton()
         

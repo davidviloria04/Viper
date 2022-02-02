@@ -123,8 +123,8 @@
 				0A8AD736277523D700255501 /* TVRouter.swift */,
 				0A8AD734277523D700255501 /* TVViewController.swift */,
 				0A8AD73C27753A7700255501 /* ModelCountry.swift */,
-				3FCA9D792784C6F80071C787 /* Cities */,
-				3FCA9D7A2784C7220071C787 /* Countries */,
+				3FCA9D792784C6F80071C787 /* Collections */,
+				3FCA9D7A2784C7220071C787 /* TablesViewCells */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
-		3FCA9D792784C6F80071C787 /* Cities */ = {
+		3FCA9D792784C6F80071C787 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
 				FB87D7FB2784EE78006056BE /* cityStyle2.swift */,
@@ -202,10 +202,10 @@
 				FB87D7FD278640BC006056BE /* CollectionViewCell.swift */,
 				FB87D7FE278640BC006056BE /* CollectionViewCell.xib */,
 			);
-			path = Cities;
+			path = Collections;
 			sourceTree = "<group>";
 		};
-		3FCA9D7A2784C7220071C787 /* Countries */ = {
+		3FCA9D7A2784C7220071C787 /* TablesViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				3F80F071277BCADC00C8C787 /* HomeTableViewCell.swift */,
@@ -219,7 +219,7 @@
 				3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */,
 				3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */,
 			);
-			path = Countries;
+			path = TablesViewCells;
 			sourceTree = "<group>";
 		};
 		9D9A09D524F42D0F5BFFF999 /* Pods */ = {

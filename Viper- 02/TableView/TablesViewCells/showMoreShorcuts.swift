@@ -33,6 +33,7 @@ class showMoreShorcuts: UITableViewCell {
         label.isSkeletonable = true
         label.linesCornerRadius = 7
         buttonVerMas.isSkeletonable = true
+        buttonVerMas.layer.cornerRadius = 10
     }
     
     private func loadData(){

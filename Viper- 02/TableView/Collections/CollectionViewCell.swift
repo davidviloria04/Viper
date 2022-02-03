@@ -11,7 +11,7 @@ import SkeletonView
 class CollectionViewCell: UICollectionViewCell {
     
     //View #1
-    @IBOutlet weak var cityname: UILabel!
+    @IBOutlet weak var miniAppName: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var isNew: UILabel!
@@ -31,8 +31,8 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     private func setupSkeleton(){
-        cityname.isSkeletonable = true
-        cityname.linesCornerRadius =  7
+        miniAppName.isSkeletonable = true
+        miniAppName.linesCornerRadius =  7
         icon.isSkeletonable = true
         icon.layer.cornerRadius = 7
         isNew.isSkeletonable = true
@@ -40,12 +40,12 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     private func loadData(){
-        cityname.showAnimatedGradientSkeleton()
+        miniAppName.showAnimatedGradientSkeleton()
         icon.showAnimatedGradientSkeleton()
         isNew.showAnimatedGradientSkeleton()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
-            self.cityname.hideSkeleton()
+            self.miniAppName.hideSkeleton()
             self.icon.hideSkeleton()
             self.isNew.hideSkeleton()
         }

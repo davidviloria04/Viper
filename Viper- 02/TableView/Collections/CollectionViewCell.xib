@@ -25,13 +25,13 @@
                                 <rect key="frame" x="5" y="5" width="120" height="118"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTe-oX-Rx2">
-                                <rect key="frame" x="98" y="5" width="27" height="14.5"/>
+                                <rect key="frame" x="93" y="5" width="32" height="17"/>
                                 <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-tV-TgP" userLabel="citynameLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-tV-TgP" userLabel="miniappnameLabel">
                                 <rect key="frame" x="10" y="128" width="110" height="17"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -67,9 +67,9 @@
             </constraints>
             <size key="customSize" width="221" height="225"/>
             <connections>
-                <outlet property="cityname" destination="Vmr-tV-TgP" id="sHe-Av-UlO"/>
                 <outlet property="icon" destination="cj0-pT-YhG" id="l4O-Ji-3yp"/>
                 <outlet property="isNew" destination="mTe-oX-Rx2" id="aIN-xU-6JY"/>
+                <outlet property="miniAppName" destination="Vmr-tV-TgP" id="sHe-Av-UlO"/>
                 <outlet property="view" destination="Qcv-Mx-VoP" id="LZm-mt-4ii"/>
             </connections>
             <point key="canvasLocation" x="86.231884057971016" y="23.772321428571427"/>

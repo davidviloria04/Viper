@@ -10,7 +10,7 @@ import UIKit
 class MiniAppsShorcuts: UITableViewCell{
     
     
-    @IBOutlet weak var citiesCV: UICollectionView!
+    @IBOutlet weak var miniAppsCV: UICollectionView!
     
     private var indexPath: IndexPath?
     var delegate : TVViewController?
@@ -19,11 +19,11 @@ class MiniAppsShorcuts: UITableViewCell{
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        citiesCV.dataSource = self
-        citiesCV.delegate = self
+        miniAppsCV.dataSource = self
+        miniAppsCV.delegate = self
         register(classType: AccesosRapidos.self)
-        self.citiesCV.collectionViewLayout = flowLayout2
-        citiesCV.reloadData()
+        self.miniAppsCV.collectionViewLayout = flowLayout2
+        miniAppsCV.reloadData()
 
         // Initialization code
     }
@@ -47,7 +47,7 @@ class MiniAppsShorcuts: UITableViewCell{
     
     private func register(classType: AnyClass) {
             let id = String(describing: classType.self)
-        citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
+        miniAppsCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
         }
 
     

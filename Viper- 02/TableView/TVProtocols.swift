@@ -12,8 +12,8 @@ import UIKit
 protocol TVViewProtocol: AnyObject {
     // Presenter -> View
     var presenter: TVPresenterProtocol? { get set }
-    func ViewCountry(countries :[CellType])
-    func NumCountry(numCountry :Int)
+    func ViewCell(cells :[CellType])
+    func NumCell(numCell :Int)
     
 }
 protocol TVRouterProtocol: AnyObject{

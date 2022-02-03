@@ -56,14 +56,14 @@ class TVViewController: UIViewController {
 }
 
 extension TVViewController: TVViewProtocol{
-    func NumCountry(numCountry: Int) {
-        self.numRow = numCountry
-        print(numCountry)
+    func NumCell(numCell: Int) {
+        self.numRow = numCell
+        print(numCell)
     }
     
-    func ViewCountry(countries: [CellType]) {
-        print(countries)
-        self.listCells = countries
+    func ViewCell(cells: [CellType]) {
+        print(cells)
+        self.listCells = cells
     }
     // TODO: implement view output methods
 }
@@ -76,7 +76,7 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (listCells[indexPath.row].type == 1) {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell") as? HomeTableViewCell else { return UITableViewCell() }
-            cell.listCities = listCells[indexPath.row].miniApps
+            cell.listMiniApps = listCells[indexPath.row].miniApps
             cell.delegate = self
             return cell
             

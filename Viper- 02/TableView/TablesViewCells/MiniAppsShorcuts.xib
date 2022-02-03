@@ -37,8 +37,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="CitiesCV" destination="OZt-z4-WIj" id="uej-Mz-GbU"/>
-                <outlet property="citiesCV" destination="OZt-z4-WIj" id="vX7-Go-Veh"/>
+                <outlet property="miniAppsCV" destination="OZt-z4-WIj" id="vX7-Go-Veh"/>
             </connections>
             <point key="canvasLocation" x="430.43478260869568" y="171.42857142857142"/>
         </tableViewCell>

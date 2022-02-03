@@ -11,23 +11,22 @@ import UIKit
 class HomeTableViewCell: UITableViewCell{
     
     
-    @IBOutlet weak var citiesCV: UICollectionView!
+    @IBOutlet weak var miniAppsCV: UICollectionView!
     
-    //citiesCV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     
     private var indexPath: IndexPath?
     var delegate : TVViewController?
-    var listCities = [MiniApps]()
+    var listMiniApps = [MiniApps]()
     
     let screenSize: CGRect = UIScreen.main.bounds
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        citiesCV.dataSource = self
-        citiesCV.delegate = self
+        miniAppsCV.dataSource = self
+        miniAppsCV.delegate = self
         register(classType: CollectionViewCell.self)
-        self.citiesCV.collectionViewLayout = flowLayout
-        citiesCV.reloadData()
+        self.miniAppsCV.collectionViewLayout = flowLayout
+        miniAppsCV.reloadData()
         
         // Initialization code
     }
@@ -44,24 +43,24 @@ class HomeTableViewCell: UITableViewCell{
     
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
-        citiesCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
+        miniAppsCV.register(UINib(nibName: id, bundle: nil), forCellWithReuseIdentifier: id)
     }
     
 }
 
 extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.listCities.count
+        return self.listMiniApps.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
-        cell.cityname.text = listCities[indexPath.row].name
-        cell.icon.image = UIImage(named: listCities[indexPath.row].urlImage)
-        if(!listCities[indexPath.row].isNew){
+        cell.miniAppName.text = listMiniApps[indexPath.row].name
+        cell.icon.image = UIImage(named: listMiniApps[indexPath.row].urlImage)
+        if(!listMiniApps[indexPath.row].isNew){
             cell.isNew.isHidden = true
         }
-        if (listCities[indexPath.row].color == 0){
+        if (listMiniApps[indexPath.row].color == 0){
             cell.isNew.backgroundColor = UIColor.red
         }
         return cell

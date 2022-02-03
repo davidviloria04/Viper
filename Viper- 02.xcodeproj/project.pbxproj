@@ -12,7 +12,7 @@
 		0A8AD739277523D700255501 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD734277523D700255501 /* TVViewController.swift */; };
 		0A8AD73A277523D700255501 /* TVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD735277523D700255501 /* TVPresenter.swift */; };
 		0A8AD73B277523D700255501 /* TVRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD736277523D700255501 /* TVRouter.swift */; };
-		0A8AD73D27753A7700255501 /* ModelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD73C27753A7700255501 /* ModelCountry.swift */; };
+		0A8AD73D27753A7700255501 /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AD73C27753A7700255501 /* ModelCell.swift */; };
 		14542D85365D10E0C0E117A5 /* Pods_Viper__02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBC7191DC6B2A6164809BAC /* Pods_Viper__02.framework */; };
 		3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FEC912799EB75008B9AAD /* AccesosRapidos.swift */; };
 		3F2FEC942799EB75008B9AAD /* AccesosRapidos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FEC922799EB75008B9AAD /* AccesosRapidos.xib */; };
@@ -58,7 +58,7 @@
 		0A8AD734277523D700255501 /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 		0A8AD735277523D700255501 /* TVPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVPresenter.swift; sourceTree = "<group>"; };
 		0A8AD736277523D700255501 /* TVRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVRouter.swift; sourceTree = "<group>"; };
-		0A8AD73C27753A7700255501 /* ModelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCountry.swift; sourceTree = "<group>"; };
+		0A8AD73C27753A7700255501 /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
 		35F4E4F3B3349284471AD21F /* Pods-Viper- 02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper- 02.debug.xcconfig"; path = "Target Support Files/Pods-Viper- 02/Pods-Viper- 02.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2FEC912799EB75008B9AAD /* AccesosRapidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesosRapidos.swift; sourceTree = "<group>"; };
 		3F2FEC922799EB75008B9AAD /* AccesosRapidos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccesosRapidos.xib; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				0A8AD732277523D700255501 /* TVProtocols.swift */,
 				0A8AD736277523D700255501 /* TVRouter.swift */,
 				0A8AD734277523D700255501 /* TVViewController.swift */,
-				0A8AD73C27753A7700255501 /* ModelCountry.swift */,
+				0A8AD73C27753A7700255501 /* ModelCell.swift */,
 				3FCA9D792784C6F80071C787 /* Collections */,
 				3FCA9D7A2784C7220071C787 /* TablesViewCells */,
 			);
@@ -376,7 +376,7 @@
 				3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */,
 				3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */,
 				3F2FEC97279A01A1008B9AAD /* MiniAppsShorcuts.swift in Sources */,
-				0A8AD73D27753A7700255501 /* ModelCountry.swift in Sources */,
+				0A8AD73D27753A7700255501 /* ModelCell.swift in Sources */,
 				0A8AD739277523D700255501 /* TVViewController.swift in Sources */,
 				3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */,
 				3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */,

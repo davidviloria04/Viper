@@ -33,8 +33,8 @@ extension TVInteractor: TVInteractorProtocol {
 
 class TVInteractor {
     func getDatosOutPut() -> [String] {
-        let myCountries = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
-       return myCountries
+        let myData = ["España", "Mexico", "Perú", "Colombia", "Argentina", "EEUU", "Francia", "Italia"]
+       return myData
     }
     
     func getCellType() -> [CellType] {

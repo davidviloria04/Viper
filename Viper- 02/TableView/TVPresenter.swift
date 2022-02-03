@@ -24,8 +24,8 @@ class TVPresenter {
 extension TVPresenter: TVPresenterProtocol {
     func viewDidLoad() {
         self.cellType = interactor?.getCellType()
-        view?.ViewCountry(countries: self.cellType ?? [])
-        view?.NumCountry(numCountry: self.cellType?.count ?? 0)
+        view?.ViewCell(cells: self.cellType ?? [])
+        view?.NumCell(numCell: self.cellType?.count ?? 0)
         print(interactor?.getDatos())
     }
 }

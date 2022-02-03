@@ -55,12 +55,12 @@ class TVInteractor {
         listMiniApps.append(MiniApps(name: "Claro", urlImage: "0.png", type: 1, isNew: false, color: 0))
         listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1, isNew: false, color: 0))
         listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1.png", type: 1, isNew: false, color: 0))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: true, color: 0))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: true, color: 1))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
-        listMiniApps.append(MiniApps(name: "Claro", urlImage: "avatar1", type: 1, isNew: false, color: 0))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: false, color: 0))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: true, color: 0))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: false, color: 0))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: true, color: 1))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: false, color: 0))
+        listMiniApps.append(MiniApps(name: "Claro", urlImage: "iphone-reverso", type: 1, isNew: false, color: 0))
 
         return listMiniApps
     }

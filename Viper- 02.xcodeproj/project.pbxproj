@@ -155,7 +155,6 @@
 				3F40A7A1276BD8B200D147A3 /* Home */,
 				3F40A78D276BD89800D147A3 /* AppDelegate.swift */,
 				3F40A78F276BD89800D147A3 /* SceneDelegate.swift */,
-				3F40A793276BD89800D147A3 /* Main.storyboard */,
 				3F40A796276BD89900D147A3 /* Assets.xcassets */,
 				3F40A798276BD89900D147A3 /* LaunchScreen.storyboard */,
 				3F40A79B276BD89900D147A3 /* Info.plist */,
@@ -173,6 +172,7 @@
 				3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */,
 				3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */,
 				3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */,
+				3F40A793276BD89800D147A3 /* Main.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";

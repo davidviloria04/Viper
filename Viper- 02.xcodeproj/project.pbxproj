@@ -44,6 +44,7 @@
 		3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63308277A596A002D81FD /* CVWireFrame.swift */; };
 		3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */; };
 		3FEC2A0B27AAE14100D4106A /* GreetingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */; };
+		3FFCCB9027ADB3040012C34B /* ExternalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */; };
 		FB5F41EF279B2AC0000054F9 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */; };
 		FB5F41F0279B2AC0000054F9 /* BannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5F41EE279B2AC0000054F9 /* BannerTableViewCell.xib */; };
 		FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB87D7F92784EDD2006056BE /* cityStyle2.xib */; };
@@ -92,6 +93,7 @@
 		3FA63308277A596A002D81FD /* CVWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWireFrame.swift; sourceTree = "<group>"; };
 		3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsTableViewCell.swift; sourceTree = "<group>"; };
 		3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsTableViewCell.xib; sourceTree = "<group>"; };
+		3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDataManager.swift; sourceTree = "<group>"; };
 		9DFEFE96E171B74642A16A55 /* Pods-Viper- 02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper- 02.release.xcconfig"; path = "Target Support Files/Pods-Viper- 02/Pods-Viper- 02.release.xcconfig"; sourceTree = "<group>"; };
 		CFBC7191DC6B2A6164809BAC /* Pods_Viper__02.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper__02.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5F41ED279B2AC0000054F9 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0A8AD733277523D700255501 /* TVInteractor.swift */,
+				3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */,
 				0A8AD735277523D700255501 /* TVPresenter.swift */,
 				0A8AD732277523D700255501 /* TVProtocols.swift */,
 				0A8AD736277523D700255501 /* TVRouter.swift */,
@@ -372,6 +375,7 @@
 				0A8AD73B277523D700255501 /* TVRouter.swift in Sources */,
 				0A8AD73A277523D700255501 /* TVPresenter.swift in Sources */,
 				3F40A792276BD89800D147A3 /* ViewController.swift in Sources */,
+				3FFCCB9027ADB3040012C34B /* ExternalDataManager.swift in Sources */,
 				0A8AD738277523D700255501 /* TVInteractor.swift in Sources */,
 				3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */,
 				3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */,

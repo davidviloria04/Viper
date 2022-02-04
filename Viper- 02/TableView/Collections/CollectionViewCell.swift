@@ -23,7 +23,7 @@ class CollectionViewCell: UICollectionViewCell {
         view.clipsToBounds = true
         isNew.layer.cornerRadius = 5.0
         isNew.clipsToBounds = true
-        
+        isNew.isHidden = false
         //Skeleton
         setupSkeleton()
         loadData()

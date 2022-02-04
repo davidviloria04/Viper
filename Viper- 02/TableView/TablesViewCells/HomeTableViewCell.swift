@@ -57,11 +57,20 @@ extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
         cell.miniAppName.text = listMiniApps[indexPath.row].name
         cell.icon.image = UIImage(named: listMiniApps[indexPath.row].urlImage)
-        if(!listMiniApps[indexPath.row].isNew){
-            cell.isNew.isHidden = true
+        if(listMiniApps[indexPath.row].isNew){
+            cell.isNew.isHidden = false
+            if (listMiniApps[indexPath.row].color == 0){
+                cell.isNew.backgroundColor = UIColor.red
+            }
+            if (listMiniApps[indexPath.row].color == 1){
+                cell.isNew.backgroundColor = UIColor.blue
+            }
+            return cell
         }
-        if (listMiniApps[indexPath.row].color == 0){
-            cell.isNew.backgroundColor = UIColor.red
+        if(listMiniApps[indexPath.row].isNew == false){
+            cell.isNew.isHidden = true
+            cell.isNew.backgroundColor = UIColor.white
+            return cell
         }
         return cell
     }

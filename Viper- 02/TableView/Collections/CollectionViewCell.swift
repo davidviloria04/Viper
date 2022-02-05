@@ -14,16 +14,14 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var miniAppName: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var isNew: UILabel!
+    @IBOutlet weak var newLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        newLabel.isHidden = true
         view.layer.cornerRadius = 10.0
         view.clipsToBounds = true
-        isNew.layer.cornerRadius = 5.0
-        isNew.clipsToBounds = true
-        isNew.isHidden = false
         //Skeleton
         setupSkeleton()
         loadData()
@@ -35,19 +33,15 @@ class CollectionViewCell: UICollectionViewCell {
         miniAppName.linesCornerRadius =  7
         icon.isSkeletonable = true
         icon.layer.cornerRadius = 7
-        isNew.isSkeletonable = true
-        self.isNew.isHiddenWhenSkeletonIsActive = true
     }
     
     private func loadData(){
         miniAppName.showAnimatedGradientSkeleton()
         icon.showAnimatedGradientSkeleton()
-        isNew.showAnimatedGradientSkeleton()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5){
             self.miniAppName.hideSkeleton()
             self.icon.hideSkeleton()
-            self.isNew.hideSkeleton()
         }
     }
     

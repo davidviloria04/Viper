@@ -63,19 +63,11 @@ extension MiniAppsShorcuts : UICollectionViewDelegate, UICollectionViewDataSourc
         cell.fetchImage(urlString: listAr[indexPath.row].urlImage)
         cell.labelAR.lineBreakMode = .byWordWrapping
         cell.labelAR.numberOfLines = 0
-        if(listAr[indexPath.row].isNew){
-            cell.isNew.isHidden = false
-            if (listAr[indexPath.row].color == 0){
-                cell.isNew.backgroundColor = UIColor.red
+        if (listAr[indexPath.row].isNew){
+            cell.newLabel.isHidden = false
+            if(listAr[indexPath.row].color == 0){
+                cell.newLabel.backgroundColor = UIColor.red
             }
-            if (listAr[indexPath.row].color == 1){
-                cell.isNew.backgroundColor = UIColor.blue
-            }
-            return cell
-        }
-        if(listAr[indexPath.row].isNew == false){
-            cell.isNew.isHidden = true
-            cell.isNew.backgroundColor = UIColor.white
             return cell
         }
             return cell

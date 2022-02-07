@@ -7,5 +7,6 @@ target 'Viper- 02' do
 
   # Pods for Viper- 02
   pod "SkeletonView"
+  pod "ViewAnimator"
 
 end

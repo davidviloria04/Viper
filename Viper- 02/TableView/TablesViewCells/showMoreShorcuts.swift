@@ -16,15 +16,15 @@ class showMoreShorcuts: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        buttonVerMas.layer.cornerRadius = 0.2 * buttonVerMas.bounds.size.width
-        buttonVerMas.clipsToBounds = true
         
+        buttonVerMas.rounded()
         
         setupSkeleton()
         loadData()
     }
     
     @IBAction func buttonVerMas(_ sender: UIButton) {
+        sender.bounce()
         delegate?.showAlert()
     }
     
@@ -33,7 +33,6 @@ class showMoreShorcuts: UITableViewCell {
         label.isSkeletonable = true
         label.linesCornerRadius = 7
         buttonVerMas.isSkeletonable = true
-        buttonVerMas.layer.cornerRadius = 10
     }
     
     private func loadData(){

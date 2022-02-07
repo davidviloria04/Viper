@@ -28,20 +28,10 @@
 		3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */; };
 		3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */; };
 		3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */; };
-		3F6F234C2797613E00FE80CE /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F234A2797613E00FE80CE /* Banner.swift */; };
-		3F6F234D2797613E00FE80CE /* banner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6F234B2797613E00FE80CE /* banner.xib */; };
-		3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F067277BBE6E00C8C787 /* XIBViewController.swift */; };
-		3F80F06A277BBE6E00C8C787 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F80F068277BBE6E00C8C787 /* XIBViewController.xib */; };
-		3F80F06C277BBEC000C8C787 /* XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F06B277BBEC000C8C787 /* XIB.swift */; };
 		3F80F073277BCADC00C8C787 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F80F071277BCADC00C8C787 /* HomeTableViewCell.swift */; };
 		3F80F074277BCADC00C8C787 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F80F072277BCADC00C8C787 /* HomeTableViewCell.xib */; };
 		3F88592B277CEA930015C98F /* showMoreShorcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88592A277CEA930015C98F /* showMoreShorcuts.swift */; };
 		3F88592F277CEAD70015C98F /* showMoreShorcuts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F88592E277CEAD70015C98F /* showMoreShorcuts.xib */; };
-		3FA63309277A596A002D81FD /* CVPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63302277A596A002D81FD /* CVPresenter.swift */; };
-		3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63304277A596A002D81FD /* CVProtocols.swift */; };
-		3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63305277A596A002D81FD /* CVInteractor.swift */; };
-		3FA6330D277A596A002D81FD /* CVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63306277A596A002D81FD /* CVView.swift */; };
-		3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA63308277A596A002D81FD /* CVWireFrame.swift */; };
 		3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */; };
 		3FEC2A0B27AAE14100D4106A /* GreetingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */; };
 		3FFCCB9027ADB3040012C34B /* ExternalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */; };
@@ -77,20 +67,10 @@
 		3F40A7A6276BD8DD00D147A3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3F40A7A8276BD8EE00D147A3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		3F40A7AA276BDAF000D147A3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		3F6F234A2797613E00FE80CE /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
-		3F6F234B2797613E00FE80CE /* banner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = banner.xib; sourceTree = "<group>"; };
-		3F80F067277BBE6E00C8C787 /* XIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
-		3F80F068277BBE6E00C8C787 /* XIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
-		3F80F06B277BBEC000C8C787 /* XIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIB.swift; sourceTree = "<group>"; };
 		3F80F071277BCADC00C8C787 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3F80F072277BCADC00C8C787 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		3F88592A277CEA930015C98F /* showMoreShorcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showMoreShorcuts.swift; sourceTree = "<group>"; };
 		3F88592E277CEAD70015C98F /* showMoreShorcuts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = showMoreShorcuts.xib; sourceTree = "<group>"; };
-		3FA63302277A596A002D81FD /* CVPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPresenter.swift; sourceTree = "<group>"; };
-		3FA63304277A596A002D81FD /* CVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVProtocols.swift; sourceTree = "<group>"; };
-		3FA63305277A596A002D81FD /* CVInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVInteractor.swift; sourceTree = "<group>"; };
-		3FA63306277A596A002D81FD /* CVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVView.swift; sourceTree = "<group>"; };
-		3FA63308277A596A002D81FD /* CVWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVWireFrame.swift; sourceTree = "<group>"; };
 		3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsTableViewCell.swift; sourceTree = "<group>"; };
 		3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsTableViewCell.xib; sourceTree = "<group>"; };
 		3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDataManager.swift; sourceTree = "<group>"; };
@@ -153,7 +133,6 @@
 		3F40A78C276BD89800D147A3 /* Viper- 02 */ = {
 			isa = PBXGroup;
 			children = (
-				3FA632ED277A56FD002D81FD /* CollectionView */,
 				0A8AD7312775238D00255501 /* TableView */,
 				3F40A7A1276BD8B200D147A3 /* Home */,
 				3F40A78D276BD89800D147A3 /* AppDelegate.swift */,
@@ -161,8 +140,6 @@
 				3F40A796276BD89900D147A3 /* Assets.xcassets */,
 				3F40A798276BD89900D147A3 /* LaunchScreen.storyboard */,
 				3F40A79B276BD89900D147A3 /* Info.plist */,
-				3F6F234A2797613E00FE80CE /* Banner.swift */,
-				3F6F234B2797613E00FE80CE /* banner.xib */,
 			);
 			path = "Viper- 02";
 			sourceTree = "<group>";
@@ -178,21 +155,6 @@
 				3F40A793276BD89800D147A3 /* Main.storyboard */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		3FA632ED277A56FD002D81FD /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				3FA63302277A596A002D81FD /* CVPresenter.swift */,
-				3FA63304277A596A002D81FD /* CVProtocols.swift */,
-				3FA63305277A596A002D81FD /* CVInteractor.swift */,
-				3FA63306277A596A002D81FD /* CVView.swift */,
-				3FA63308277A596A002D81FD /* CVWireFrame.swift */,
-				3F80F06B277BBEC000C8C787 /* XIB.swift */,
-				3F80F067277BBE6E00C8C787 /* XIBViewController.swift */,
-				3F80F068277BBE6E00C8C787 /* XIBViewController.xib */,
-			);
-			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		3FCA9D792784C6F80071C787 /* Collections */ = {
@@ -308,8 +270,6 @@
 			files = (
 				FB5F41F0279B2AC0000054F9 /* BannerTableViewCell.xib in Resources */,
 				3F2FEC942799EB75008B9AAD /* AccesosRapidos.xib in Resources */,
-				3F80F06A277BBE6E00C8C787 /* XIBViewController.xib in Resources */,
-				3F6F234D2797613E00FE80CE /* banner.xib in Resources */,
 				3F40A79A276BD89900D147A3 /* LaunchScreen.storyboard in Resources */,
 				3F40A797276BD89900D147A3 /* Assets.xcassets in Resources */,
 				3F88592F277CEAD70015C98F /* showMoreShorcuts.xib in Resources */,
@@ -378,28 +338,20 @@
 				3FFCCB9027ADB3040012C34B /* ExternalDataManager.swift in Sources */,
 				0A8AD738277523D700255501 /* TVInteractor.swift in Sources */,
 				3F2FEC932799EB75008B9AAD /* AccesosRapidos.swift in Sources */,
-				3F80F069277BBE6E00C8C787 /* XIBViewController.swift in Sources */,
 				3F2FEC97279A01A1008B9AAD /* MiniAppsShorcuts.swift in Sources */,
 				0A8AD73D27753A7700255501 /* ModelCell.swift in Sources */,
 				0A8AD739277523D700255501 /* TVViewController.swift in Sources */,
 				3F40A7A9276BD8EE00D147A3 /* HomeRouter.swift in Sources */,
 				3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */,
-				3FA6330D277A596A002D81FD /* CVView.swift in Sources */,
-				3FA6330C277A596A002D81FD /* CVInteractor.swift in Sources */,
 				FB87D7FF278640BD006056BE /* CollectionViewCell.swift in Sources */,
 				0A8AD737277523D700255501 /* TVProtocols.swift in Sources */,
-				3FA6330B277A596A002D81FD /* CVProtocols.swift in Sources */,
 				3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */,
 				3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */,
 				3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */,
-				3F80F06C277BBEC000C8C787 /* XIB.swift in Sources */,
 				3F80F073277BCADC00C8C787 /* HomeTableViewCell.swift in Sources */,
 				3F40A7A5276BD8CE00D147A3 /* HomeInteractor.swift in Sources */,
 				3F40A790276BD89800D147A3 /* SceneDelegate.swift in Sources */,
 				3F88592B277CEA930015C98F /* showMoreShorcuts.swift in Sources */,
-				3FA63309277A596A002D81FD /* CVPresenter.swift in Sources */,
-				3F6F234C2797613E00FE80CE /* Banner.swift in Sources */,
-				3FA6330F277A596A002D81FD /* CVWireFrame.swift in Sources */,
 				FB87D7FC2784EE78006056BE /* cityStyle2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

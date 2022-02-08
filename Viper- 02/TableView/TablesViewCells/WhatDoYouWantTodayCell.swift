@@ -17,7 +17,7 @@ class WhatDoYouWantTodayCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        buttonShowMore.titleLabel?.font = UIFont(name: "ChalkboardSE-Regular", size: 20)
         setupSkeleton()
         loadSkeleton()
     }
@@ -27,6 +27,7 @@ class WhatDoYouWantTodayCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+
         // Configure the view for the selected state
     }
     
@@ -34,11 +35,11 @@ class WhatDoYouWantTodayCell: UITableViewCell {
         labelWhatDoYouWant.isSkeletonable = true
         buttonShowMore.isSkeletonable = true
     }
-    
+
     func loadSkeleton(){
         labelWhatDoYouWant.showAnimatedGradientSkeleton()
         buttonShowMore.showAnimatedGradientSkeleton()
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.labelWhatDoYouWant.hideSkeleton()
             self.buttonShowMore.hideSkeleton()

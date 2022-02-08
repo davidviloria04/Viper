@@ -33,6 +33,8 @@
 		3F80F074277BCADC00C8C787 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F80F072277BCADC00C8C787 /* HomeTableViewCell.xib */; };
 		3F88592B277CEA930015C98F /* showMoreShorcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88592A277CEA930015C98F /* showMoreShorcuts.swift */; };
 		3F88592F277CEAD70015C98F /* showMoreShorcuts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F88592E277CEAD70015C98F /* showMoreShorcuts.xib */; };
+		3F8A228F27B2CB6E00CC754A /* WhatDoYouWantTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A228D27B2CB6E00CC754A /* WhatDoYouWantTodayCell.swift */; };
+		3F8A229027B2CB6E00CC754A /* WhatDoYouWantTodayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A228E27B2CB6E00CC754A /* WhatDoYouWantTodayCell.xib */; };
 		3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */; };
 		3FEC2A0B27AAE14100D4106A /* GreetingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */; };
 		3FFCCB9027ADB3040012C34B /* ExternalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */; };
@@ -73,6 +75,8 @@
 		3F80F072277BCADC00C8C787 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		3F88592A277CEA930015C98F /* showMoreShorcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showMoreShorcuts.swift; sourceTree = "<group>"; };
 		3F88592E277CEAD70015C98F /* showMoreShorcuts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = showMoreShorcuts.xib; sourceTree = "<group>"; };
+		3F8A228D27B2CB6E00CC754A /* WhatDoYouWantTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatDoYouWantTodayCell.swift; sourceTree = "<group>"; };
+		3F8A228E27B2CB6E00CC754A /* WhatDoYouWantTodayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatDoYouWantTodayCell.xib; sourceTree = "<group>"; };
 		3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsTableViewCell.swift; sourceTree = "<group>"; };
 		3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreetingsTableViewCell.xib; sourceTree = "<group>"; };
 		3FFCCB8F27ADB3040012C34B /* ExternalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDataManager.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				FB5F41EE279B2AC0000054F9 /* BannerTableViewCell.xib */,
 				3FEC2A0827AAE14100D4106A /* GreetingsTableViewCell.swift */,
 				3FEC2A0927AAE14100D4106A /* GreetingsTableViewCell.xib */,
+				3F8A228D27B2CB6E00CC754A /* WhatDoYouWantTodayCell.swift */,
+				3F8A228E27B2CB6E00CC754A /* WhatDoYouWantTodayCell.xib */,
 			);
 			path = TablesViewCells;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				3F40A795276BD89800D147A3 /* Main.storyboard in Resources */,
 				FB87D800278640BD006056BE /* CollectionViewCell.xib in Resources */,
 				FB87D7FA2784EDD2006056BE /* cityStyle2.xib in Resources */,
+				3F8A229027B2CB6E00CC754A /* WhatDoYouWantTodayCell.xib in Resources */,
 				3F2FEC98279A01A1008B9AAD /* MiniAppsShorcuts.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +355,7 @@
 				3F40A78E276BD89800D147A3 /* AppDelegate.swift in Sources */,
 				FB87D7FF278640BD006056BE /* CollectionViewCell.swift in Sources */,
 				0A8AD737277523D700255501 /* TVProtocols.swift in Sources */,
+				3F8A228F27B2CB6E00CC754A /* WhatDoYouWantTodayCell.swift in Sources */,
 				3F40A7AB276BDAF000D147A3 /* HomeProtocols.swift in Sources */,
 				3F40A7A7276BD8DD00D147A3 /* HomePresenter.swift in Sources */,
 				3FEC2A0A27AAE14100D4106A /* GreetingsTableViewCell.swift in Sources */,

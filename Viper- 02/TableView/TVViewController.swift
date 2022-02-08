@@ -25,16 +25,21 @@ class TVViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+
+
         register(classType: HomeTableViewCell.self)
         register(classType: showMoreShorcuts.self)
         register(classType: MiniAppsShorcuts.self)
         register(classType: BannerTableViewCell.self)
         register(classType: GreetingsTableViewCell.self)
-        tableView.reloadData()
+        register(classType: WhatDoYouWantTodayCell.self)
+        animateTable()
+
         
         //Skeleton
         
         tableView.isSkeletonable = true
+
         
     }
     private func register(classType: AnyClass) {
@@ -94,10 +99,15 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "showMoreShorcuts") as? showMoreShorcuts else { return UITableViewCell()}
             cell.delegate = self
             return cell
-        } else {
+        } else if (listCells[indexPath.row].type == 5){
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()
             }
             cell.fetchImage(urlString: listCells[indexPath.row].banners.urlImage) 
+            return cell
+        } else{
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "WhatDoYouWantTodayCell") as? WhatDoYouWantTodayCell else {
+                return UITableViewCell()
+            }
             return cell
         }
     }
@@ -154,6 +164,27 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         alert()
         debugPrint(screenSize.height)
     }
+    
+//    func animateTable() {
+//        tableView.reloadData()
+//
+//        let cells = tableView.visibleCells
+//
+//        let tableViewHeight = tableView.bounds.size.height
+//
+//        for cell in cells {
+//            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+//        }
+//
+//        var delayCounter = 0
+//        for cell in cells {
+//            UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+//                cell.transform = CGAffineTransform.identity
+//                }, completion: nil)
+//            delayCounter += 1
+//        }
+//    }
+    
 }
 
 

@@ -41,7 +41,7 @@ class TVInteractor {
         var cellType = [CellType]()
         
         cellType.append(CellType(type: 3, miniApps: [], shortcuts: [], banners: nil))
-        cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil ))
+        cellType.append(CellType(type: 6, miniApps: [], shortcuts: [], banners: nil ))
         cellType.append(CellType(type: 1, miniApps: getDatosMiniApps(), shortcuts: [], banners: nil))
         cellType.append(CellType(type: 5, miniApps: [], shortcuts: [], banners: getDatosBanners()))
         cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil))

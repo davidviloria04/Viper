@@ -24,8 +24,7 @@ class TVViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-
+    
 
         register(classType: HomeTableViewCell.self)
         register(classType: showMoreShorcuts.self)
@@ -33,14 +32,13 @@ class TVViewController: UIViewController {
         register(classType: BannerTableViewCell.self)
         register(classType: GreetingsTableViewCell.self)
         register(classType: WhatDoYouWantTodayCell.self)
-        animateTable()
-
         
         //Skeleton
         
         tableView.isSkeletonable = true
+        tableView.reloadData()
+        animateTable()
 
-        
     }
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
@@ -166,7 +164,6 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func animateTable() {
-        tableView.reloadData()
 
         let cells = tableView.visibleCells
         
@@ -184,7 +181,6 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
             delayCounter += 1
         }
     }
-    
 }
 
 

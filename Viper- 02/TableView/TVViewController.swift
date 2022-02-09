@@ -7,6 +7,7 @@
 
 import UIKit
 import SkeletonView
+import ViewAnimator
 
 class TVViewController: UIViewController {
     
@@ -35,8 +36,16 @@ class TVViewController: UIViewController {
         //Skeleton
         
         tableView.isSkeletonable = true
-        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let animation = AnimationType.from(direction: .bottom, offset: 500)
+        UIView.animate(views: tableView.visibleCells, animations: [animation])
+        
+        tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, delay: 0.5, duration: 2.5)
+    }
+    
     private func register(classType: AnyClass) {
         let id = String(describing: classType.self)
         tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)

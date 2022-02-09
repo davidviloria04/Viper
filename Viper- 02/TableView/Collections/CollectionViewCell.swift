@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 class CollectionViewCell: UICollectionViewCell {
     
@@ -25,31 +24,31 @@ class CollectionViewCell: UICollectionViewCell {
         isNew.clipsToBounds = true
         
         //Skeleton
-        setupSkeleton()
-        loadData()
+//        setupSkeleton()
+//        loadData()
         
     }
     
-    private func setupSkeleton(){
-        miniAppName.isSkeletonable = true
-        miniAppName.linesCornerRadius =  7
-        icon.isSkeletonable = true
-        icon.layer.cornerRadius = 7
-        isNew.isSkeletonable = true
-        self.isNew.isHiddenWhenSkeletonIsActive = true
-    }
-    
-    private func loadData(){
-        miniAppName.showAnimatedGradientSkeleton()
-        icon.showAnimatedGradientSkeleton()
-        isNew.showAnimatedGradientSkeleton()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
-            self.miniAppName.hideSkeleton()
-            self.icon.hideSkeleton()
-            self.isNew.hideSkeleton()
-        }
-    }
+//    private func setupSkeleton(){
+//        miniAppName.isSkeletonable = true
+//        miniAppName.linesCornerRadius =  7
+//        icon.isSkeletonable = true
+//        icon.layer.cornerRadius = 7
+//        isNew.isSkeletonable = true
+//        self.isNew.isHiddenWhenSkeletonIsActive = true
+//    }
+//
+//    private func loadData(){
+//        miniAppName.showAnimatedGradientSkeleton()
+//        icon.showAnimatedGradientSkeleton()
+//        isNew.showAnimatedGradientSkeleton()
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+//            self.miniAppName.hideSkeleton()
+//            self.icon.hideSkeleton()
+//            self.isNew.hideSkeleton()
+//        }
+//    }
     
     
 }

@@ -5,8 +5,7 @@ target 'Viper- 02' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Viper- 02
-  pod "SkeletonView"
+  # Pods for Viper- 02     
   pod "ViewAnimator"
 
 end

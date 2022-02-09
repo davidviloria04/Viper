@@ -1,20 +1,16 @@
 PODS:
-  - SkeletonView (1.29.2)
   - ViewAnimator (3.1.0)
 
 DEPENDENCIES:
-  - SkeletonView
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
-    - SkeletonView
     - ViewAnimator
 
 SPEC CHECKSUMS:
-  SkeletonView: 915a80ecc2b6421ab7ac0f0212321c0cc1406472
   ViewAnimator: a9ceed80266e00fd435ec4fb99b2df64d580d0e4
 
-PODFILE CHECKSUM: 5d8900c1684d6f8cd81a1a46f1838cf58a3841d9
+PODFILE CHECKSUM: 6bda0519881d5d58f29bf1a2dc64e936dbc37adc
 
 COCOAPODS: 1.11.2

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 class GreetingsTableViewCell: UITableViewCell {
     
@@ -28,8 +27,8 @@ class GreetingsTableViewCell: UITableViewCell {
         cardSaldo.layer.cornerRadius = 8.0
         cardAddMoney.layer.cornerRadius = 8.0
         
-        setupSkeleton()
-        launchSkeleton()
+        //setupSkeleton()
+        //launchSkeleton()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,34 +38,34 @@ class GreetingsTableViewCell: UITableViewCell {
     }
     
     
-    private func setupSkeleton(){
-        iconAgregarDinero.isSkeletonable = true
-        iconAgregarDinero.layer.cornerRadius = 8.0
-        labelAgregarDinero.isSkeletonable = true
-        labelAgregarDinero.linesCornerRadius = 7
-        labelSaldo.isSkeletonable = true
-        labelSaldo.linesCornerRadius = 7
-        labelMontoDelSaldo.isSkeletonable = true
-        labelMontoDelSaldo.linesCornerRadius = 7
-        labelHola.isSkeletonable = true
-        labelHola.linesCornerRadius = 7
-    }
-    
-    private func launchSkeleton(){
-        self.iconAgregarDinero.showAnimatedGradientSkeleton()
-        self.labelAgregarDinero.showAnimatedGradientSkeleton()
-        self.labelSaldo.showAnimatedGradientSkeleton()
-        self.labelMontoDelSaldo.showAnimatedGradientSkeleton()
-        self.labelHola.showAnimatedGradientSkeleton()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.iconAgregarDinero.hideSkeleton()
-            self.labelAgregarDinero.hideSkeleton()
-            self.labelSaldo.hideSkeleton()
-            self.labelMontoDelSaldo.hideSkeleton()
-            self.labelHola.hideSkeleton()
-        }
-    }
+//    private func setupSkeleton(){
+//        iconAgregarDinero.isSkeletonable = true
+//        iconAgregarDinero.layer.cornerRadius = 8.0
+//        labelAgregarDinero.isSkeletonable = true
+//        labelAgregarDinero.linesCornerRadius = 7
+//        labelSaldo.isSkeletonable = true
+//        labelSaldo.linesCornerRadius = 7
+//        labelMontoDelSaldo.isSkeletonable = true
+//        labelMontoDelSaldo.linesCornerRadius = 7
+//        labelHola.isSkeletonable = true
+//        labelHola.linesCornerRadius = 7
+//    }
+//
+//    private func launchSkeleton(){
+//        self.iconAgregarDinero.showAnimatedGradientSkeleton()
+//        self.labelAgregarDinero.showAnimatedGradientSkeleton()
+//        self.labelSaldo.showAnimatedGradientSkeleton()
+//        self.labelMontoDelSaldo.showAnimatedGradientSkeleton()
+//        self.labelHola.showAnimatedGradientSkeleton()
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            self.iconAgregarDinero.hideSkeleton()
+//            self.labelAgregarDinero.hideSkeleton()
+//            self.labelSaldo.hideSkeleton()
+//            self.labelMontoDelSaldo.hideSkeleton()
+//            self.labelHola.hideSkeleton()
+//        }
+//    }
     
     
     

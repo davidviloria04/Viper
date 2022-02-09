@@ -10,9 +10,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell{
     
-    
     @IBOutlet weak var miniAppsCV: UICollectionView!
-    
     
     private var indexPath: IndexPath?
     var delegate : TVViewController?
@@ -70,6 +68,3 @@ extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
     }
     
 }
-
-
-

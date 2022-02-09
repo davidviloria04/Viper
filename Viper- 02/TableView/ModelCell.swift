@@ -12,12 +12,16 @@ public struct CellType{
     public var miniApps: [MiniApps]
     public var shortcuts: [Shortcuts]
     public var banners: Banners
+    public var textLabel: String
+    public var textButtonShowMore: String
     
-    init(type: Int, miniApps: [MiniApps], shortcuts: [Shortcuts], banners: Banners?){
+    init(type: Int, miniApps: [MiniApps], shortcuts: [Shortcuts], banners: Banners?, textLabel: String, textButtonShowMore: String){
         self.type = type
         self.miniApps = miniApps
         self.shortcuts = shortcuts
         self.banners = banners ?? Banners(name: "", urlImage: "https://www.ambientum.com/wp-content/uploads/2019/01/bandera-australia-696x348.png", type: 1)
+        self.textLabel = textLabel
+        self.textButtonShowMore = textButtonShowMore
     }
 }
 

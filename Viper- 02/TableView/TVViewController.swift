@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SkeletonView
 import ViewAnimator
 
 class TVViewController: UIViewController {
@@ -35,15 +34,22 @@ class TVViewController: UIViewController {
         
         //Skeleton
         
-        tableView.isSkeletonable = true
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        let animation = AnimationType.from(direction: .bottom, offset: 500)
+//        UIView.animate(views: tableView.visibleCells, animations: [animation])
+//
+//        tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, duration: 1)
+//    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let animation = AnimationType.from(direction: .bottom, offset: 500)
         UIView.animate(views: tableView.visibleCells, animations: [animation])
         
-        tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, delay: 0.5, duration: 2.5)
+        tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, duration: 1)
     }
     
     private func register(classType: AnyClass) {
@@ -102,6 +108,8 @@ extension TVViewController: UITableViewDataSource, UITableViewDelegate{
         } else if (listCells[indexPath.row].type == 4){
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "showMoreShorcuts") as? showMoreShorcuts else { return UITableViewCell()}
             cell.delegate = self
+            cell.label.text = listCells[indexPath.row].textLabel
+            cell.buttonVerMas.titleLabel?.text = listCells[indexPath.row].textButtonShowMore
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell") as? BannerTableViewCell else { return UITableViewCell()

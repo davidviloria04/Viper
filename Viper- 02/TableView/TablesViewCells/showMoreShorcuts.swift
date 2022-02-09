@@ -19,8 +19,8 @@ class showMoreShorcuts: UITableViewCell {
         
         buttonVerMas.rounded()
         
-        setupSkeleton()
-        loadData()
+        //setupSkeleton()
+        //loadData()
     }
     
     @IBAction func buttonVerMas(_ sender: UIButton) {
@@ -29,21 +29,21 @@ class showMoreShorcuts: UITableViewCell {
     }
     
     
-    private func setupSkeleton(){
-        label.isSkeletonable = true
-        label.linesCornerRadius = 7
-        buttonVerMas.isSkeletonable = true
-    }
-    
-    private func loadData(){
-        label.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .white), transition: .crossDissolve(0.7))
-        buttonVerMas.showAnimatedGradientSkeleton()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
-            self.buttonVerMas.hideSkeleton()
-            self.label.hideSkeleton()
-        }
-    }
+//    private func setupSkeleton(){
+//        label.isSkeletonable = true
+//        label.linesCornerRadius = 7
+//        buttonVerMas.isSkeletonable = true
+//    }
+//
+//    private func loadData(){
+//        label.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .white), transition: .crossDissolve(0.7))
+//        buttonVerMas.showAnimatedGradientSkeleton()
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+//            self.buttonVerMas.hideSkeleton()
+//            self.label.hideSkeleton()
+//        }
+//    }
     
     
     

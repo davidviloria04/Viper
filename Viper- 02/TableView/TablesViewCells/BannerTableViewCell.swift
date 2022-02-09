@@ -21,8 +21,8 @@ class BannerTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
         
-        setupSkeleton()
-        loadData()
+        //setupSkeleton()
+        //loadData()
     }
     func fetchImage(urlString: String) {
         guard let url = URL(string: urlString) else {
@@ -42,17 +42,17 @@ class BannerTableViewCell: UITableViewCell {
         getDataTask.resume()
     }
     
-    private func setupSkeleton(){
-        promoBanner.isSkeletonable = true
-        promoBanner.layer.cornerRadius = 10
-    }
-    
-    private func loadData(){
-        promoBanner.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .systemRed), animation: nil, transition: .crossDissolve(0.5))
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
-            self.promoBanner.hideSkeleton()
-        }
-    }
+//    private func setupSkeleton(){
+//        promoBanner.isSkeletonable = true
+//        promoBanner.layer.cornerRadius = 10
+//    }
+//
+//    private func loadData(){
+//        promoBanner.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .systemRed), animation: nil, transition: .crossDissolve(0.5))
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+//            self.promoBanner.hideSkeleton()
+//        }
+//    }
     
 }

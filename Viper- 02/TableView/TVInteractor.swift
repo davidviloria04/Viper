@@ -40,12 +40,12 @@ class TVInteractor {
     func getCellType() -> [CellType] {
         var cellType = [CellType]()
         
-        cellType.append(CellType(type: 3, miniApps: [], shortcuts: [], banners: nil))
-        cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil ))
-        cellType.append(CellType(type: 1, miniApps: getDatosMiniApps(), shortcuts: [], banners: nil))
-        cellType.append(CellType(type: 5, miniApps: [], shortcuts: [], banners: getDatosBanners()))
-        cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil))
-        cellType.append(CellType(type: 2, miniApps: getDatosMiniApps(), shortcuts: getDatosAR(), banners: nil))
+        cellType.append(CellType(type: 3, miniApps: [], shortcuts: [], banners: nil, textLabel: "", textButtonShowMore: ""))
+        cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil , textLabel: "¿Que quieres hacer hoy?", textButtonShowMore: "Ver más"))
+        cellType.append(CellType(type: 1, miniApps: getDatosMiniApps(), shortcuts: [], banners: nil, textLabel: "", textButtonShowMore: ""))
+        cellType.append(CellType(type: 5, miniApps: [], shortcuts: [], banners: getDatosBanners(), textLabel: "", textButtonShowMore: ""))
+        cellType.append(CellType(type: 4, miniApps: [], shortcuts: [], banners: nil, textLabel: "Accesos Rapidos", textButtonShowMore: "Ver más"))
+        cellType.append(CellType(type: 2, miniApps: getDatosMiniApps(), shortcuts: getDatosAR(), banners: nil, textLabel: "", textButtonShowMore: ""))
         
        return cellType
     }

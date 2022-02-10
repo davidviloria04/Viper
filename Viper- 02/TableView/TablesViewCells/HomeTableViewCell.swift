@@ -55,15 +55,21 @@ extension HomeTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell else {return UICollectionViewCell()}
+        cell.isNew.isHidden = !listMiniApps[indexPath.row].isNew
+        if(!cell.isNew.isHidden){
+            cell.isNew.backgroundColor = (listMiniApps[indexPath.row].color) == 0 ? UIColor.red : UIColor.blue
+            return cell
+        }
         cell.miniAppName.text = listMiniApps[indexPath.row].name
         cell.icon.image = UIImage(named: listMiniApps[indexPath.row].urlImage)
-        if(!listMiniApps[indexPath.row].isNew){
-            cell.isNew.isHidden = true
-        }
-        if (listMiniApps[indexPath.row].color == 0){
-            cell.isNew.backgroundColor = UIColor.red
-        }
         return cell
+
+//        if(!listMiniApps[indexPath.row].isNew){
+//            cell.isNew.isHidden = true
+//        }
+//        if (listMiniApps[indexPath.row].color == 0){
+//            cell.isNew.backgroundColor = UIColor.red
+//        }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)  {
         delegate?.alert()

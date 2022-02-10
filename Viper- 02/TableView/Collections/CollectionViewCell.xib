@@ -24,13 +24,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="iphone-reverso" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-pT-YhG">
                                 <rect key="frame" x="5" y="5" width="120" height="118"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTe-oX-Rx2">
-                                <rect key="frame" x="93" y="5" width="32" height="17"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-tV-TgP" userLabel="miniappnameLabel">
                                 <rect key="frame" x="10" y="128" width="110" height="17"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="12"/>
@@ -42,16 +35,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTe-oX-Rx2">
+                                <rect key="frame" x="98" y="0.0" width="32" height="17"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vmr-tV-TgP" firstAttribute="top" secondItem="cj0-pT-YhG" secondAttribute="bottom" constant="5" id="5MF-sl-igk"/>
-                            <constraint firstAttribute="trailing" secondItem="mTe-oX-Rx2" secondAttribute="trailing" constant="5" id="A7l-NS-fO9"/>
+                            <constraint firstAttribute="trailing" secondItem="mTe-oX-Rx2" secondAttribute="trailing" id="A7l-NS-fO9"/>
                             <constraint firstAttribute="trailing" secondItem="Vmr-tV-TgP" secondAttribute="trailing" constant="10" id="AbE-WH-nTc"/>
                             <constraint firstItem="cj0-pT-YhG" firstAttribute="top" secondItem="Qcv-Mx-VoP" secondAttribute="top" constant="5" id="Q4C-1a-cxF"/>
                             <constraint firstItem="Vmr-tV-TgP" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" constant="10" id="Qof-Uq-4F9"/>
                             <constraint firstAttribute="bottom" secondItem="Vmr-tV-TgP" secondAttribute="bottom" constant="5" id="dC5-nz-PEK"/>
-                            <constraint firstItem="mTe-oX-Rx2" firstAttribute="top" secondItem="cj0-pT-YhG" secondAttribute="top" id="qtH-FM-bmN"/>
+                            <constraint firstItem="mTe-oX-Rx2" firstAttribute="top" secondItem="cj0-pT-YhG" secondAttribute="top" constant="-5" id="qtH-FM-bmN"/>
                             <constraint firstAttribute="trailing" secondItem="cj0-pT-YhG" secondAttribute="trailing" constant="5" id="w5u-MI-1i2"/>
                             <constraint firstItem="cj0-pT-YhG" firstAttribute="leading" secondItem="Qcv-Mx-VoP" secondAttribute="leading" constant="5" id="yGi-nK-WzK"/>
                         </constraints>

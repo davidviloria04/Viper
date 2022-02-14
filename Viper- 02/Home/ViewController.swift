@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     
     var presenter: HomePresenterProtocol?
+    var viewModel: ModelHome = ModelHome()
     
     @IBOutlet weak var launchViper: UIButton!
     @IBOutlet weak var greetings: UILabel!
     
+    @IBOutlet weak var Api: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,11 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func callApi(_ sender: UIButton) {
+        viewModel.executeApi()
+    }
+    
+    
     @IBAction func CallViper(_ sender: Any) {
         
         let viewTV  = TVRouter.build()

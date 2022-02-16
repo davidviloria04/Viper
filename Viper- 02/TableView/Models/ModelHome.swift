@@ -6,18 +6,19 @@
 //
 
 import Foundation
-import UIKit
 
 
 final class ModelHome{
+    
     func executeApi(){
         let urlSession = URLSession.shared
         let url = URL(string: "http://localhost:3000/ClaroPay-WS/home")
         
         urlSession.dataTask(with: url!) { data, response, error in
-            print("Data \(String(describing: data))")
-            print("Responde \(String(describing: response))")
-            print("Error \(String(describing: error))")
-        }
+            if let data = data {
+                let json = try? JSONSerialization.jsonObject(with: data)
+                print("\(String(describing: json))")
+            }
+        }.resume()
     }
 }

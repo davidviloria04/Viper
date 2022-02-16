@@ -33,7 +33,6 @@ class TVViewController: UIViewController {
         tableView.reloadData()
         
         //Skeleton
-        
     }
     
 //    override func viewDidAppear(_ animated: Bool) {
@@ -43,8 +42,7 @@ class TVViewController: UIViewController {
 //
 //        tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, duration: 1)
 //    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)  {
         super.viewWillAppear(animated)
         let animation = AnimationType.from(direction: .bottom, offset: 500)
         UIView.animate(views: tableView.visibleCells, animations: [animation])
@@ -52,17 +50,17 @@ class TVViewController: UIViewController {
         tableView.animate(animations: [animation], reversed: false, initialAlpha: 0.5, finalAlpha: 1, duration: 1)
     }
     
-    private func register(classType: AnyClass) {
+    private func register(classType: AnyClass)  {
         let id = String(describing: classType.self)
         tableView.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
     }
     
-    func alert(){
+    func alert()    {
         let alert = UIAlertController(title: "Pulsado", message: "Haz pulsado", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alert, animated: true)
     }
-    func showAlert(){
+    func showAlert()    {
         let alert = UIAlertController(title: "Ver mas", message: "Haz pulsado el botón ver  mas", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ir a Ver mas", style: .default))
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))

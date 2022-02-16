@@ -59,7 +59,6 @@ public struct Shortcuts{
 }
 
 public struct Banners{
-    
     public var name: String
     public var urlImage: String
     public var type: Int = 0
